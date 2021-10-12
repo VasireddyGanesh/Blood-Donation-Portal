@@ -1,0 +1,95 @@
+body{
+  margin-top: 0%;
+  background-color:#f7f6f5;
+  font-family: sans-serif;
+  }
+  h1{
+    color: rgb(15,3,90);
+  }
+  nav{
+    margin-top: 1%;
+    margin-left: 4%;
+  }
+  a{
+      text-decoration: none;
+      color: darkblue;
+      font-weight: bold;
+  }
+  #a1{
+      font-size: 30px;
+      margin-left: 0%;
+  }
+  #a3{
+      margin-left: 0%;
+  }
+  #a2{
+      float: right;
+      padding: 5mm;
+      margin-right: 6%;
+      position: relative;
+  }
+  #a2:hover{
+      background-color: #E5ECEC;
+  }
+#lin{
+  padding-top: 5%;
+}
+
+ #aa{
+    padding-left: 5%;
+    padding-top:0%;
+   align-items: right;
+
+   display: inline;
+  display:inline-block;
+  width: 400px;
+}
+
+#bb{
+
+ margin-left: 10%;
+    padding:1% 1%;
+    border-color:black;
+
+    border-radius: 30px;
+    background-color: white;
+    color:black ;
+    font-weight: bold;
+}
+#ab{
+
+    margin-top: 1%;
+    margin-left: 25%;
+   padding: 1% 1%;
+       border:none;
+       border-radius: 30px;
+       background-color: skyblue;
+       color: rgb(12,26,11) ;
+       font-weight: bold;
+}
+#bc{
+  margin-top: 1%;
+ margin-left: 20%;
+padding: 1% 1%;
+    border:none;
+    border-radius: 30px;
+    background-color: skyblue;
+    color: rgb(12,26,11) ;
+    font-weight: bold;
+}
+#ftt{
+  padding-top:1%;
+  padding-left:45%;
+}
+#login-img{
+   
+   width: 30%;
+   height: 30%;
+   margin-left: 40%;
+   padding-top: 0%;
+}
+#blah{
+
+  border-radius: 50%;
+  margin-left: 0%;
+}
