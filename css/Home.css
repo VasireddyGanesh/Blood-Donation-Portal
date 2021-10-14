@@ -1,0 +1,51 @@
+body{
+    font-family: sans-serif;
+}
+nav{
+    margin: 4%;
+}
+a{
+    text-decoration: none;
+    color: darkblue;
+    font-weight: bold;
+}
+#a1{
+    font-size: 50px;
+    margin-left: 5%;
+}
+#a2{
+    float: right;
+    padding: 5mm;
+    border-radius: 8mm;
+    margin-right: 6%;
+    position: relative;
+}
+#a2:hover{
+    background-color: skyblue;
+}
+#Home_Page_image{
+    float:right;
+    clear:right;
+    width: 40%;
+    height: 400%;
+    margin-right: 10%;
+}
+#MainFrame{
+    padding: 5% 3%;
+    text-align: center;
+}
+#MainFrame h1,h5{
+    color: darkblue;
+}
+#signup-el{
+    border: none;
+    border-radius: 30px;
+    background-color: skyblue;
+    padding: 10px 15px;
+    color: rgb(253, 249, 249);
+    font-weight: bold;
+}
+footer h3{
+    text-align: center;
+}
+
