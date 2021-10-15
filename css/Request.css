@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: sans-serif;
+}
+header{
+    margin-top: 3%;
+    padding-bottom: 10px;
+    display: flex;
+    align-items: center;
+    color: darkblue;
+    border-bottom: 1.6px solid rgb(173, 169, 169);
+}
+#header-text{
+    width: 30%;
+    text-align: center;
+}
+#header-text h5{
+    color: black;
+}
+/* #header-text h1{
+    padding-bottom: 10px;
+    border-bottom: 1.6px solid rgb(173, 169, 169);
+    border-bottom-width: 50p;
+}  */
+#header-nav{
+    width: 70%;
+    text-align: center;
+}
+#header-nav a{
+    text-decoration: none;
+    margin: 0 25px;
+    padding: 10px 25px;
+    border-radius: 25px;
+    font-size: 135%;
+    font-weight: bold;
+    color: darkblue;
+}
+#header-nav a:hover{
+    background-color: skyblue;
+}
+#main{
+    display: flex;
+}
+#Profile{
+    width: 22%;
+    height: 535px;
+    text-align: center;
+    padding-top: 5%;
+    border-right: 1.6px solid rgb(173, 169, 169);
+}
+#Profile img{
+    width: auto;
+    height: 200px;
+    border-radius: 350px;
+}
+#Profile h5{
+    margin-top: 10px;
+    font-size: 130%;
+}
+#Logout-btn{
+    font-weight: bolder;
+    font-size: 20px;
+    color: white;
+    background-color:skyblue;
+    border-width: 200px;
+    padding: 10px 40px;
+    border: none;
+    border-radius: 50px;
+    margin-top: 30px;
+    cursor: pointer;
+}
+#Right-side{
+    display: grid;
+    grid-template-rows: 150px;
+    width: 78%;
+}
+#Request-form{
+     padding: 25px 150px;
+}
+#Right-bottom{
+    display: grid;
+    grid-template-columns: 60% auto auto;
+}
+#Message{
+    text-align: center;
+    padding: 150px 30px;
+}
+#Message h3{
+    color: red;
+    padding-bottom: 10px;
+}
+#Message p{
+    border: 1.2px solid rgb(173, 169, 169);
+    border-radius: 30px;
+    padding: 20px;
+    font-weight: 550;
+}
+#Request-details{
+    /* background-color: sandybrown; */
+    padding: 75px 150px;
+}
+#Request-details h5{
+    padding-bottom: 10px;
+}
+#Blood-group-selection{
+    border: 1.6px solid rgb(173, 169, 169);
+    padding: 5px 8px;
+    border-radius: 20px;
+    font-weight: bold;
+}
+#Blood-group,#location{
+    padding-bottom: 50px;
+}
+#location-search{
+    border: 1.6px solid rgb(173, 169, 169);
+    border-radius: 20px;
+    font-weight: bolder;
+    font-size: 100%;
+    text-align: center;
+    padding: 5px 0;
+}
+#Confirm-btn{
+    font-weight: bolder;
+    font-size: 20px;
+    color: white;
+    background-color:skyblue;
+    border-width: 200px;
+    padding: 10px 40px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+}
