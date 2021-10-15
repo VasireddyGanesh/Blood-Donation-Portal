@@ -111,7 +111,7 @@ header{
 }
 #message{
     text-align: center;
-    margin: 200px 30px;
+    padding: 165px 30px;
 }
 #message p{
     font-weight: 200;
