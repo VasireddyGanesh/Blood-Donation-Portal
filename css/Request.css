@@ -20,11 +20,6 @@ header{
 #header-text h5{
     color: black;
 }
-/* #header-text h1{
-    padding-bottom: 10px;
-    border-bottom: 1.6px solid rgb(173, 169, 169);
-    border-bottom-width: 50p;
-}  */
 #header-nav{
     width: 70%;
     text-align: center;
@@ -74,55 +69,29 @@ header{
 }
 #Right-side{
     display: grid;
-    grid-template-rows: 150px;
+    grid-template-rows: 175px;
     width: 78%;
 }
-#Request-form{
-     padding: 25px 150px;
-}
-#Right-bottom{
+#Right-top{
     display: grid;
-    grid-template-columns: 60% auto auto;
+    grid-template-columns: auto auto;
+    color: darkblue;
 }
-#Message{
+#Right-top1,#Right-top2{
     text-align: center;
-    padding: 150px 30px;
-}
-#Message h3{
-    color: red;
-    padding-bottom: 10px;
-}
-#Message p{
-    border: 1.2px solid rgb(173, 169, 169);
-    border-radius: 30px;
-    padding: 20px;
-    font-weight: 550;
-}
-#Request-details{
-    /* background-color: sandybrown; */
-    padding: 75px 150px;
-}
-#Request-details h5{
-    padding-bottom: 10px;
+    padding-top: 50px;
 }
 #Blood-group-selection{
+    margin-top: 40px;
     border: 1.6px solid rgb(173, 169, 169);
-    padding: 5px 8px;
-    border-radius: 20px;
+    padding: 10px 20px;
+    border-radius: 30px;
     font-weight: bold;
+    font-size: 150%;
+    cursor: pointer;
 }
-#Blood-group,#location{
-    padding-bottom: 50px;
-}
-#location-search{
-    border: 1.6px solid rgb(173, 169, 169);
-    border-radius: 20px;
-    font-weight: bolder;
-    font-size: 100%;
-    text-align: center;
-    padding: 5px 0;
-}
-#Confirm-btn{
+#Register-btn{
+    margin-top: 40px;
     font-weight: bolder;
     font-size: 20px;
     color: white;
@@ -132,4 +101,14 @@ header{
     border: none;
     border-radius: 50px;
     cursor: pointer;
+}
+#Right-bottom img{
+    padding-left: 275px;
+    padding-top: 40px;
+    width: 50%;
+    height: 60%;
+}
+footer{
+    text-align: center;
+    padding-top: 20px;
 }
