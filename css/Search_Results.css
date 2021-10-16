@@ -69,20 +69,21 @@ header{
 }
 #Right-side{
     display: grid;
-    grid-template-rows: 175px;
+    grid-template-rows: 150px;
     width: 78%;
 }
 #Right-top{
     display: grid;
     grid-template-columns: auto auto;
     color: darkblue;
+    border-bottom: 1.6px solid rgb(173, 169, 169);
 }
 #Right-top1,#Right-top2{
     text-align: center;
-    padding-top: 50px;
+    padding-top: 25px;
 }
 #Blood-group-selection{
-    margin-top: 40px;
+    margin-top: 10px;
     border: 1.6px solid rgb(173, 169, 169);
     padding: 10px 20px;
     border-radius: 30px;
@@ -90,25 +91,12 @@ header{
     font-size: 150%;
     cursor: pointer;
 }
-#Register-btn{
-    margin-top: 40px;
+#location{
+    margin-top: 10px;
+    border: 1.6px solid rgb(173, 169, 169);
+    border-radius: 20px;
     font-weight: bolder;
-    font-size: 20px;
-    color: white;
-    background-color:skyblue;
-    border-width: 200px;
-    padding: 10px 40px;
-    border: none;
-    border-radius: 50px;
-    cursor: pointer;
-}
-#Right-bottom img{
-    padding-left: 275px;
-    padding-top: 40px;
-    width: 50%;
-    height: 60%;
-}
-footer{
+    font-size: 100%;
     text-align: center;
-    padding-top: 20px;
+    padding: 10px 0px;   
 }
