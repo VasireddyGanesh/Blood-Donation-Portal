@@ -49,8 +49,8 @@ html {
 #forgetPassword-msg{
   align-self: flex-start;
   font-family: 'Raleway', sans-serif;
-  font-size: 1rem;
-  color: black;
+  font-size: 1.3rem;
+  color: #067a97;
   text-decoration: underline black;
 }
 
@@ -98,6 +98,7 @@ a {
 #footer {
   padding-top:10%;
   text-align: center;
+  font-size: 1.3rem;
 }
 
 #sign_in-btn {
@@ -139,6 +140,7 @@ a {
   color: #039ec5;
   font-size: 1.3rem;
   padding-left: 1.5rem;
+  font-family: 'Raleway', sans-serif;
 }
 
 #forgetPassword-msg:hover,#signUp:hover{
