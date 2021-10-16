@@ -1,65 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
 
-body{
-  background-color:rgb(233,235,235);
-  font-family: sans-serif;
-  }
-   #login-img{
-      float:left;
-      clear:left;
-      width: 35%;
-      height: 300%;
-      margin-left: 20%;
-      padding-top: 2%;
-  }
-  h1{
-    color: rgb(15,3,90);
-  }
-  #side{
-      padding-left: 65%;
-      padding-top: 5%;
-      align-items:right;
-  }
-  #sett{
-    margin-left: 5%;
-  }
- #fn{
-  margin-bottom: 2px solid yellow;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #F7F7F7;
 }
-a{
+
+html {
+  font-size: 62.5%;
+  font-family: 'Roboto', sans-serif;
+}
+
+
+#container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-left: 15%;
+  margin-top: 5%;
+  margin-right: 15%;
+}
+
+#img-container{
+  order: 0;
+}
+
+#form-container{
+  order: 1;
+}
+
+#welcome-msg{
+  font-family: 'Raleway', sans-serif;
+  color: #151865;
+  font-weight: bold;
+  font-size: 2.8rem;
+  margin-bottom: 0.4rem;
+}
+
+.msg{
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 0.2rem;
+  margin-bottom: 2rem;
+}
+
+#forgetPassword-msg{
+  align-self: flex-start;
+  font-family: 'Raleway', sans-serif;
+  font-size: 1rem;
+  color: black;
+  text-decoration: underline black;
+}
+
+
+#login-img {
+  max-width: 65%;
+  height: auto;
+}
+
+h1 {
+  color: rgb(15, 3, 90);
+}
+
+#tag{
+  font-family:'Poppins', sans-serif;
+  position: relative;
+  padding-left: 2.5rem;
+  color: black;
+}
+
+#header {
+  margin-left: 15%;
+  margin-top: 3%;
+}
+
+#brand {
+  margin-bottom: 2px solid yellow;
+  font-size: 2.8rem;
+  font-weight: bold;
+  color: #151865;
+  font-family: 'Raleway', sans-serif;
+  text-decoration: underline #8b8b8b;
+}
+
+#mainframe{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+a {
   text-decoration: none;
 }
-#ftt{
+
+#footer {
   padding-top:10%;
-  padding-left:40%;
+  text-align: center;
 }
 
-#signin{
-    border:none;
-    border-radius: 30px;
-    background-color: skyblue;
-    padding: 10px 20px;
-    color: rgb(253, 249, 249);
-    font-weight: bold;
-    margin-left: 140px;
+#sign_in-btn {
+  border: none;
+  border-radius: 30px;
+  background-color: #45B4D0;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+  color: rgb(255, 255, 255);
+  font-family: 'Raleway', sans-serif;
+  font-weight: bold;
+  margin-top: 2rem;
 }
-#inputbx{
-    border: none;
-    border-radius: 30px;
-    background-color: rgb(255,255,255);
-    padding: 10px 100px;
-    font-weight: bold;
-    border-bottom-width: 5%;
-    height:25px;
+
+.inputbx {
+  border: solid;
+  /* border-radius: 30px; */
+  background-color: rgb(255, 255, 255);
+  /* padding: 10px 100px; */
+  padding-left: 1rem;
+  padding-right: 10rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  /* font-weight: bold; */
+  border-width: 0.2rem;
+  border-color: #45B4D0;
+  /* height: 25px; */
+  margin-bottom: 0.6rem;
 }
-#al
-{
-  display: inline;
-  display:inline-block;
-  width: 250px;
+
+#sign_in-btn:hover{
+  background-color: rgb(255, 114, 94);
 }
-#inputbx:hover{
-    background-color: rgb(207,240,248);
+
+#signUp{
+  text-decoration: underline;
+  color: #039ec5;
+  font-size: 1.3rem;
+  padding-left: 1.5rem;
 }
-#signin:hover{
-  background-color:rgb(118,225,133);
+
+#forgetPassword-msg:hover,#signUp:hover{
+  color: rgb(255, 114, 94);
+}
+
+@media only screen and (max-width: 650px) {
+    #login-img {
+      content-visibility:hidden;
+    }
+
 }
