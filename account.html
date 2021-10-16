@@ -1,46 +1,55 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <title></title>
-    <link rel="stylesheet"  href="css/account.css">
-    <script class="jsbin" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-  </head>
-  <body>
-    <div>
-        <header>
-            <nav>
-                <a id="a1" href="#">Find Blood Donor</a>
-                <a id="a2" href="#ContactPage">Contact</a>
-                <a id="a2" href="#AboutPage">About</a><br>
-                <hr width="250" align="left">
-                <h6 id="a3">We Help you in finding BLood Donors</h6>
-                <hr>
-            </nav>
+<html lang="en">
+<head>
+   <link rel="stylesheet" href="Account.css">
+</head>
 
-        </header>
+
+<body>
+    <header>
+        <div id="header-text">
+           <h1>Find Blood Donor</h1>
+           <h5>We Help you in finding Blood Donors</h5>
+        </div>
+        <div id="header-nav">
+            <a href="#About">About</a>
+            <a href="#Contact">Contact</a>
+        </div>
+    </header>
+    <div id="main">
+        <div id="Profile">
+            <img src="profile.png" alt="Your Image">
+            <h5>Username</h5>
+            <button id="Logout-btn">LogOut</button>
+        </div>
+        <div id="Right-side">
+            <div id="Right-top">
+                <div id="Right-top1">
+                    <h1>In Need Of Blood ? </h1>
+                    <select id="Blood-group-selection">
+                        <option>Blood Group</option>
+                        <option>A+</option>
+                        <option>A-</option>
+                        <option>B+</option>
+                        <option>B-</option>
+                        <option>AB+</option>
+                        <option>AB-</option>
+                        <option>O+</option>
+                        <option>O-</option>
+                    </select>
+                </div>
+                <div id="Right-top2">
+                    <h1>Ready to Donate Blood ? </h1>
+                    <button id="Register-btn">Register</button>
+                </div>
+            </div>
+            <div id="Right-bottom">
+                <img src="Accn_Page-nurse.png" alt="Image">
+                <footer>
+                    <h3>Donate Blood and be a Hero of someone's life</h3>
+                </footer>
+            </div>
+        </div>
     </div>
-    <input type='file' onchange="readURL(this);" placeholder="upload"/>
-      <img id="blah" src="#" alt="your image" />
-      <script src="account.js"></script>
-
-
-        <h1 id="aa">In Need of Blood</h1>
-        <h1 id="aa" >Ready To Donate Blood</h1>
-
-      <form>
-          <input type="submit" name="" value="Logout" id="bc" >
-          <input type="text" placeholder="Search..blood group" id="bb">
-  
-          <input type="submit" name="" value="Register" id="ab" >
-
-         </form>
-    <!-- <div id="dd">
-      <p>Already placed a Request?<a href="#" >click Here</a></p>
-    </div> -->
-    <img src="imgs/Accn_Page-nurse.png" alt="" id="login-img">
-    <div id="ftt">
-        <h3>Donate blood be a hero of someone's life</h3>
-    </div>
-
-  </body>
+</body>
 </html>
