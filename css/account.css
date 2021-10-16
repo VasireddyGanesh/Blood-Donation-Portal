@@ -1,95 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+}
 body{
-  margin-top: 0%;
-  background-color:#f7f6f5;
-  font-family: sans-serif;
-  }
-  h1{
-    color: rgb(15,3,90);
-  }
-  nav{
-    margin-top: 1%;
-    margin-left: 4%;
-  }
-  a{
-      text-decoration: none;
-      color: darkblue;
-      font-weight: bold;
-  }
-  #a1{
-      font-size: 30px;
-      margin-left: 0%;
-  }
-  #a3{
-      margin-left: 0%;
-  }
-  #a2{
-      float: right;
-      padding: 5mm;
-      margin-right: 6%;
-      position: relative;
-  }
-  #a2:hover{
-      background-color: #E5ECEC;
-  }
-#lin{
-  padding-top: 5%;
+    font-family: sans-serif;
 }
-
- #aa{
-    padding-left: 5%;
-    padding-top:0%;
-   align-items: right;
-
-   display: inline;
-  display:inline-block;
-  width: 400px;
+header{
+    margin-top: 3%;
+    padding-bottom: 10px;
+    display: flex;
+    align-items: center;
+    color: darkblue;
+    border-bottom: 1.6px solid rgb(173, 169, 169);
 }
-
-#bb{
-
- margin-left: 10%;
-    padding:1% 1%;
-    border-color:black;
-
-    border-radius: 30px;
-    background-color: white;
-    color:black ;
+#header-text{
+    width: 30%;
+    text-align: center;
+}
+#header-text h5{
+    color: black;
+}
+#header-nav{
+    width: 70%;
+    text-align: center;
+}
+#header-nav a{
+    text-decoration: none;
+    margin-left: 100px;
+    padding: 10px 25px;
+    border-radius: 25px;
+    font-size: 135%;
     font-weight: bold;
+    color: darkblue;
 }
-#ab{
-
-    margin-top: 1%;
-    margin-left: 25%;
-   padding: 1% 1%;
-       border:none;
-       border-radius: 30px;
-       background-color: skyblue;
-       color: rgb(12,26,11) ;
-       font-weight: bold;
-}
-#bc{
-  margin-top: 1%;
- margin-left: 20%;
-padding: 1% 1%;
-    border:none;
-    border-radius: 30px;
+#header-nav a:hover{
     background-color: skyblue;
-    color: rgb(12,26,11) ;
+}
+#main{
+    display: flex;
+}
+#Profile{
+    width: 22%;
+    height: 535px;
+    text-align: center;
+    padding-top: 5%;
+    border-right: 1.6px solid rgb(173, 169, 169);
+}
+#Profile img{
+    width: auto;
+    height: 200px;
+    border-radius: 350px;
+}
+#Profile h5{
+    margin-top: 10px;
+    font-size: 130%;
+}
+#Logout-btn{
+    font-weight: bolder;
+    font-size: 20px;
+    color: white;
+    background-color:skyblue;
+    border-width: 200px;
+    padding: 10px 40px;
+    border: none;
+    border-radius: 50px;
+    margin-top: 30px;
+    cursor: pointer;
+}
+#Right-side{
+    display: grid;
+    grid-template-rows: 175px;
+    width: 78%;
+}
+#Right-top{
+    display: grid;
+    grid-template-columns: auto auto;
+    color: darkblue;
+}
+#Right-top1,#Right-top2{
+    text-align: center;
+    padding-top: 50px;
+}
+#Blood-group-selection{
+    margin-top: 40px;
+    border: 1.6px solid rgb(173, 169, 169);
+    padding: 10px 20px;
+    border-radius: 30px;
     font-weight: bold;
+    font-size: 150%;
+    cursor: pointer;
 }
-#ftt{
-  padding-top:1%;
-  padding-left:45%;
+#Register-btn{
+    margin-top: 40px;
+    font-weight: bolder;
+    font-size: 20px;
+    color: white;
+    background-color:skyblue;
+    border-width: 200px;
+    padding: 10px 40px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
 }
-#login-img{
-   
-   width: 30%;
-   height: 30%;
-   margin-left: 40%;
-   padding-top: 0%;
+#Right-bottom img{
+    padding-left: 275px;
+    padding-top: 40px;
+    width: 50%;
+    height: 60%;
 }
-#blah{
-
-  border-radius: 50%;
-  margin-left: 0%;
+footer{
+    text-align: center;
+    padding-top: 20px;
 }
