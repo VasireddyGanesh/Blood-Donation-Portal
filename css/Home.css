@@ -1,24 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+*{
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-top: 1%;
+}
+
 body{
     font-family: sans-serif;
 }
+
 nav{
-    margin: 4%;
+    /* margin: 4%; */
 }
 a{
     text-decoration: none;
-    color: darkblue;
+    color: #151865;
     font-weight: bold;
+    font-family: 'Raleway', sans-serif;
 }
 #a1{
-    font-size: 50px;
-    margin-left: 5%;
+    font-size: 35px;
+    /* margin-left: 5%; */
 }
 #a2{
     float: right;
-    padding: 5mm;
-    border-radius: 8mm;
-    margin-right: 6%;
-    position: relative;
+    margin: 0%;
+    /* padding: 5mm; */
+    padding-right: 20mm;
+    /* border-radius: 8mm; */
+    /* margin-right: 6%; */
+    /* position: relative; */
 }
 #a2:hover{
     background-color: skyblue;
@@ -28,20 +43,20 @@ a{
     clear:right;
     width: 40%;
     height: 400%;
-    margin-right: 10%;
+    /* margin-right: 10%; */
 }
 #MainFrame{
-    padding: 5% 3%;
+    /* padding: 5% 3%; */
     text-align: center;
 }
 #MainFrame h1,h5{
-    color: darkblue;
+    color: #151865;
 }
 #signup-el{
     border: none;
     border-radius: 30px;
     background-color: skyblue;
-    padding: 10px 15px;
+    /* padding: 10px 15px; */
     color: rgb(253, 249, 249);
     font-weight: bold;
 }
