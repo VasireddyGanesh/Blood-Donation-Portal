@@ -1,86 +1,176 @@
-*{
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,400&display=swap');
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
-body{
-    font-family: sans-serif;
+
+html {
+    font-size: 62.5%;
+    font-family: 'Roboto', sans-serif;
+    background-color: #F7F7F7;
 }
-#Total_page{
+
+#container {
     display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }
-#Account_details{
-    width: 40%;
-    height: 720px;
-    border-right: 1.6px solid rgb(173, 169, 169);
-}
-#Account_details p{
+
+#side-bar {
+    display: flex;
+    order: 0;
+    width: 20vw;
+    min-height: 100vh;
+    background-color: white;
+    border-right: 0.2rem solid rgb(173, 169, 169);
     text-align: center;
-    padding-top: 320px;
-    font-size: x-large;
-    font-weight: bolder;
+    align-self: center;
+    align-items: center;
+    justify-content: center;
 }
-#main-content{
-    background-color: rgb(248, 248, 248);
-    display: grid;
-    grid-template-columns: 600px auto auto;
+
+#side-bar p {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 580;
+    font-family: 'Roboto', sans-serif;
 }
-#main{
-    padding-left: 75px;
+
+#form-container {
+    order: 1;
+    align-self: center;
+    width: 30vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
 }
-#header-text{
-    color: darkblue;
-    padding-top: 50px;
-    padding-left: 40px;
+
+form {
+    padding-bottom: 15rem;
 }
-#header-text h1{
-    padding-bottom: 10px;
+
+#msg {
+    padding-top: 8rem;
 }
-#main h2{
-    padding-top: 30px;
-    padding-left: 60px;
-    font-size: 20px;
+
+#msg-1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2rem;
+    font-weight: 600;
+    color: #151865;
 }
-#acc-login{
+
+#msg-2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2rem;
+    padding-top: 2rem;
+    text-align: center;
+    padding-bottom: 3rem;
+}
+
+#brand {
+    margin-bottom: 2px;
+    font-size: 3.0rem;
+    font-weight: bold;
+    color: #151865;
+    font-family: 'Raleway', sans-serif;
+    text-decoration: underline #8b8b8b;
+    padding-top: 5rem;
+}
+
+.label {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.3rem;
+    padding-left: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+#full-name, #email-address, #passwrd {
+    padding: 1rem 10rem 1rem 1.5rem;
+    margin-bottom: 3rem;
+    border-radius: 0.8rem;
+    border: 0.15rem solid #45B4D0;
+}
+
+#tag {
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+    padding-left: 2.5rem;
+    color: black;
+}
+
+#acc-login {
     font-size: 13px;
     padding-top: 30px;
     padding-left: 70px;
     color: darkgray;
 }
-#acc-login a{
+
+#acc-login a {
     text-decoration: none;
     color: black;
-    padding-left: 5px;
 }
-#details{
-    padding-top: 50px;
-    padding-bottom: 5px;
-}
-#input-details{
-    padding: 10px 100px 10px 5px;
-    border: none;
-    font-size: 14px;
-    font-weight: 540;
-    border-radius: 20px;
-}
-#joc-btn{
-    margin-top: 50px;
+
+#submit-btn {
     border: none;
     color: white;
-    background-color: skyblue;
-    padding: 12px 80px;
-    border-radius: 30px;
+    background-color: #45B4D0;
+    padding: 1.3rem 7.5rem;
+    border-radius: 0.8rem;
+    font-family: 'Roboto', sans-serif;
 }
-#terms_privacy_policy{
-    font-size: 13px;
-    padding-top: 30px;
-    color: darkgray;
+
+#submit-btn:hover {
+    background-color: tomato;
 }
-#main-img img{
-    width: 90%;
-    height: 90%;
+
+#msg a:hover {
+    color: tomato;
+}
+
+#terms_privacy_policy {
+    font-size: 1.2rem;
+    padding-bottom: 1rem;
+    color: rgb(99, 99, 99);
+}
+
+#img-container {
+    order: 2;
+    width: 50vw;
+    height: auto;
+    align-self: center;
     float: right;
-    padding-top: 0px;
-    align-content: center;
-    border-radius: 100%;
-    margin-right: 160px;
+    display: flex;
+    flex-direction: column;
+}
+
+#img-container img {
+    max-width: 65%;
+    height: auto;
+    align-self: center;
+}
+
+#img-container p {
+    align-self: center;
+    padding-top: 3rem;
+    text-align: center;
+    font-size: 1.4rem;
+    color: black;
+}
+
+@media only screen and (max-width: 900px) {
+    #img-container, #side-bar {
+        content-visibility: hidden;
+        background-color: #F7F7F7;
+        border: none;
+    }
+    #form-container {
+        width: 100vw;
+    }
 }
