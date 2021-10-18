@@ -1,24 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-   <link rel="stylesheet" href="css/account.css">
+    <link rel="stylesheet" href="css/account.css">
 </head>
+
 <body>
     <header>
         <div id="header-text">
-           <h1>Find Blood Donor</h1>
-           <h5>We Help you in finding Blood Donors</h5>
+            <h1 id="brand">Find Blood Donor</h1>
+            <p id="tag">We help you in finding Blood Donors</p>
         </div>
         <div id="header-nav">
-            <a href="#About">About</a>
-            <a href="#Contact">Contact</a>
+            <a href="#About" id="about">About</a>
+            <a href="#Contact" id="contact">Contact</a>
         </div>
     </header>
     <div id="main">
         <div id="Profile">
-            <img src="img/profile.png" alt="Your Image">
-            <h5>Username</h5>
-            <button id="Logout-btn">LogOut</button>
+            <div id="side-bar">
+                <img src="img/profile.png" alt="Your Image">
+                <p>Username</p>
+                <!-- <button id="Logout-btn">Logout</button> -->
+                <br>
+                <a href="index.html" id="Logout-btn">Logout</a>
+            </div>
         </div>
         <div id="Right-side">
             <div id="Right-top">
@@ -38,7 +44,8 @@
                 </div>
                 <div id="Right-top2">
                     <h1>Ready to Donate Blood ? </h1>
-                    <button id="Register-btn">Register</button>
+                    <!-- <button id="Register-btn">Register</button> -->
+                    <a href="registration.html" id="Register-btn">Register</a>
                 </div>
             </div>
             <div id="Right-bottom">
@@ -50,4 +57,5 @@
         </div>
     </div>
 </body>
+
 </html>

@@ -1,86 +1,157 @@
-*{
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,400&display=swap');
+
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    background-color: #F7F7F7;
 }
-body{
-    font-family: sans-serif;
+
+html {
+    font-size: 62.5%;
+    font-family: 'Roboto', sans-serif;
 }
+
+a{
+    text-decoration: none;
+}
+
 header{
-    margin-top: 3%;
-    padding-bottom: 10px;
+    margin-top: 4rem;
+    flex-direction: row;
+    padding-bottom: 1rem;
+    justify-content: space-evenly;
     display: flex;
     align-items: center;
-    color: darkblue;
-    border-bottom: 1.6px solid rgb(173, 169, 169);
+    color: #151865;
+    border-bottom: 0.2rem solid rgb(173, 169, 169);
 }
+
 #header-text{
-    width: 30%;
+    max-width: 30%;
     text-align: center;
 }
-#header-text h5{
-    color: black;
-}
+
 #header-nav{
+    display: flex;
+    justify-content: flex-end;
+    /* background-color: yellow; */
     width: 70%;
+    float: right;
     text-align: center;
 }
+
 #header-nav a{
     text-decoration: none;
-    margin-left: 100px;
-    padding: 10px 25px;
+    /* margin-left: 100px; */
+    /* padding: 10px 25px; */
     border-radius: 25px;
-    font-size: 135%;
-    font-weight: bold;
-    color: darkblue;
+    font-size: 1.5rem;
+    /* font-weight: bold; */
+    color: #151865;
 }
+
+#about{
+    padding-right: 16rem;
+}
+
+#contact{
+    padding-right: 16rem;
+}
+
+#brand{
+    font-size: 2.8rem;
+    font-family: 'Raleway', sans-serif;
+    text-decoration: underline #8b8b8b;
+}
+
+#tag{
+    font-family: 'Poppins', sans-serif;
+    color: black;
+    text-align: center; 
+}
+
 #header-nav a:hover{
-    background-color: skyblue;
+    color: tomato;
 }
+
 #main{
     display: flex;
+    flex-direction: row;
 }
+
 #Profile{
-    width: 22%;
-    height: 535px;
+    /* background-color: yellow; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+    height: 100vh;
     text-align: center;
-    padding-top: 5%;
+    /* padding-top: 5%; */
     border-right: 1.6px solid rgb(173, 169, 169);
 }
-#Profile img{
+
+#side-bar img{
     width: auto;
-    height: 200px;
-    border-radius: 350px;
+    height: 25vh;
+    /* border-radius: 350px; */
 }
-#Profile h5{
-    margin-top: 10px;
-    font-size: 130%;
+
+#side-bar p{
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
+    margin-bottom: 3rem;
 }
+
 #Logout-btn{
-    font-weight: bolder;
-    font-size: 20px;
+    text-decoration: none;
+    /* font-weight: bold; */
+    font-size: 2rem;
     color: white;
-    background-color:skyblue;
-    border-width: 200px;
-    padding: 10px 40px;
-    border: none;
-    border-radius: 50px;
-    margin-top: 30px;
-    cursor: pointer;
+    background-color:#45B4D0;
+    /* border-width: 4rem; */
+    padding: 1rem 4rem;
+    /* border: none; */
+    border-radius: 4rem;
+    /* margin-top: 59%; */
+    /* cursor: pointer; */
 }
+
+#Logout-btn:hover{
+    font-size: 2rem;
+    color: white;
+    background-color:tomato;
+    padding: 1rem 4rem;
+}
+
+
 #Right-side{
-    display: grid;
-    grid-template-rows: 175px;
-    width: 78%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* width: 78%; */
 }
+
 #Right-top{
-    display: grid;
-    grid-template-columns: auto auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
     color: darkblue;
 }
-#Right-top1,#Right-top2{
+
+#Right-top1{
     text-align: center;
     padding-top: 50px;
 }
+
+#Right-top2{
+    text-align: center;
+    padding-top: 50px;
+}
+
 #Blood-group-selection{
     margin-top: 40px;
     border: 1.6px solid rgb(173, 169, 169);
@@ -90,6 +161,7 @@ header{
     font-size: 150%;
     cursor: pointer;
 }
+
 #Register-btn{
     margin-top: 40px;
     font-weight: bolder;
@@ -102,11 +174,12 @@ header{
     border-radius: 50px;
     cursor: pointer;
 }
+
 #Right-bottom img{
-    padding-left: 275px;
-    padding-top: 40px;
+    /* padding-left: 275px; */
+    /* padding-top: 40px; */
     width: 50%;
-    height: 60%;
+    height: auto;
 }
 footer{
     text-align: center;

@@ -121,9 +121,10 @@ form {
     border: none;
     color: white;
     background-color: #45B4D0;
-    padding: 1.3rem 7.5rem;
+    padding: 1.3rem 7.9rem;
     border-radius: 0.8rem;
     font-family: 'Roboto', sans-serif;
+    /* text-align: center; */
 }
 
 #submit-btn:hover {
@@ -164,7 +165,7 @@ form {
     color: black;
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 940px) {
     #img-container, #side-bar ,#img-container img ,#img-container p{
         background-color: #F7F7F7;
         border: none;
