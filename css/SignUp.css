@@ -165,12 +165,18 @@ form {
 }
 
 @media only screen and (max-width: 900px) {
-    #img-container, #side-bar {
-        content-visibility: hidden;
+    #img-container, #side-bar ,#img-container img ,#img-container p{
         background-color: #F7F7F7;
         border: none;
+        visibility: hidden;
     }
     #form-container {
         width: 100vw;
+        justify-content: center;
+        align-items: center;
+    }
+    #container{
+        justify-content: center;
+        align-items: center;
     }
 }
