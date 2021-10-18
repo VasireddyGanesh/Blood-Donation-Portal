@@ -1,16 +1,25 @@
-<html>
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <title>Registration</title>
+    <link rel="stylesheet" href="Registration.css">
 </head>
 
-<body style="background-color:powderblue" ;>
-    <h1 color="blue" align="left"><u>Find Blood Donor</u></h1>
-    <h4 align="left">We Help you in finding Blood Donors</h5>
-        <h2 color="blue">Registration Form !</h2>
-        <img src="img/regist.png" align="right" width="700" height="700">
-        <h4>Blood group</h4>
-        <select>
+
+<body>
+    <div id="Total_page">
+        <div id="Account_details">
+            <!-- <img src="Verified.png" alt=""> -->
+            <p>Account Details<p>
+        </div>
+        <div id="main-content">
+            <div id="main">
+                <div id="header-text">
+                    <h1>Find Blood Donor</h1>
+                    <h5>We Help you in finding Blood Donors</h5>
+                 </div>
+                 <h2>Registration Form !</h2>
+                 <h4>Blood group</h4>
+        <select id="Blood-selection">
             <option>Blood Group</option>
             <option>A+</option>
             <option>A-</option>
@@ -22,7 +31,7 @@
             <option>O-</option>
         </select>
         <h4>Date of Birth</h4>
-        <select>
+        <select id="DOB">
             <option>Day</option>
             <option>1</option>
             <option>2</option>
@@ -56,7 +65,7 @@
             <option>30</option>
             <option>31</option>
         </select>
-        <select align="right">
+        <select id="DOB">
             <option>Month</option>
             <option>1</option>
             <option>2</option>
@@ -71,7 +80,7 @@
             <option>11</option>
             <option>12</option>
         </select>
-        <select align="right">
+        <select id="DOB">
             <option>Year</option>
             <option>1985</option>
             <option>1986</option>
@@ -115,17 +124,19 @@
         <input type="radio" name="gender">Male
         <input type="radio" name="gender">Female
         <h4>Phone Number</h4>
-        <input type="text" value="Enter valid phone number">
+        <input type="tel" placeholder="Enter valid phone number" id="phone-no">
         <h4>Address</h4>
-        <textarea rows="6" cols="50">
-</textarea><br>
-        <br>
-        <input type="submit" value="Register">
-        <h5>By Registering,you agree to the <a href="https://www.w3schools.com/html/"><b>Terms and privacy
-                    policy</b></a></h5>
-
-
-
+        <textarea rows="6" cols="40">
+        </textarea><br>
+        <button id="Registration-btn">Registration</button>
+        <p id="terms_privacy_policy">By Registering,you agree to the <span style="font-weight: bold;color: black;">Terms</span> and 
+            <span style="font-weight: bold;color: black;">Privacy Policy</span></p>
+            </div>
+            <div id="main-img">
+                <img src="registration.png" alt="Image">
+                <p>You don't have to be somebody's family member to donate blood</p>
+            </div>
+        </div>
+    </div>
 </body>
-
 </html>

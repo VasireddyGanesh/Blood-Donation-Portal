@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: sans-serif;
+}
+#Total_page{
+    display: flex;
+}
+#Account_details{
+    width: 30%;
+    height: 720px;
+    border-right: 1.6px solid rgb(173, 169, 169);
+}
+#Account_details p{
+    text-align: center;
+    padding-top: 320px;
+    font-size: x-large;
+    font-weight: bolder;
+}
+#main-content{
+    background-color: rgb(248, 248, 248);
+    display: grid;
+    grid-template-columns: 600px auto auto;
+}
+#main{
+    padding-left: 50px;
+}
+#header-text{
+    color: darkblue;
+    padding-top: 25px;
+    padding-left: 25px;
+}
+#main h2{
+   padding-top: 25px;
+   padding-left: 50px;
+}
+#main h4{
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+#Blood-selection,#DOB{
+    padding: 10px;
+    font-weight: bold;
+    color: rgb(133, 131, 131);
+    border: 1.6px solid rgb(173, 169, 169);
+    border-radius: 3px;
+}
+#phone-no{
+    padding: 10px 65px;
+    font-weight: bold;
+    color: rgb(133, 131, 131);
+    border: 1.6px solid rgb(173, 169, 169);  
+    border-radius: 3px; 
+}
+textarea{
+    border: 1.6px solid rgb(173, 169, 169);
+    border-radius: 3px;
+}
+#Registration-btn{
+    margin-top: 15px;
+    font-weight: bold;
+    border: none;
+    color: white;
+    background-color: skyblue;
+    padding: 12px 122px;
+    border-radius: 3px;
+}
+#terms_privacy_policy{
+    font-size: 13px;
+    padding-top: 15px;
+    color: darkgray;
+}
+#main-img img{
+    width: 75%;
+    height: 75%;
+    float: right;
+    padding-top: 75px;
+    align-content: center;
+    /* border-radius: 50%; */
+    margin-right: 160px;
+}
+#main-img p{
+    padding-left: 40px;
+}
