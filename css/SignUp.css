@@ -40,20 +40,6 @@ html {
     font-family: 'Roboto', sans-serif;
 }
 
-#form-container {
-    order: 1;
-    align-self: center;
-    width: 30vw;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-}
-
-form {
-    padding-bottom: 15rem;
-}
 
 #msg {
     padding-top: 8rem;
@@ -84,18 +70,43 @@ form {
     padding-top: 5rem;
 }
 
+#form-container {
+    order: 1;
+    align-self: center;
+    width: 30vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+form {
+    padding-bottom: 13rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .label {
     font-family: 'Roboto', sans-serif;
     font-size: 1.3rem;
     padding-left: 0.5rem;
-    padding-bottom: 0.5rem;
+    align-self: flex-start;
+    /* padding-bottom: 0.5rem; */
 }
 
 #full-name, #email-address, #passwrd {
+    align-self: center;
     padding: 1rem 10rem 1rem 1.5rem;
-    margin-bottom: 3rem;
+    margin-bottom: 1rem;
     border-radius: 0.8rem;
     border: 0.15rem solid #45B4D0;
+}
+
+#passwrd {
+    margin-bottom: 2rem;
 }
 
 #tag {
@@ -105,26 +116,15 @@ form {
     color: black;
 }
 
-#acc-login {
-    font-size: 13px;
-    padding-top: 30px;
-    padding-left: 70px;
-    color: darkgray;
-}
-
-#acc-login a {
-    text-decoration: none;
-    color: black;
-}
-
 #submit-btn {
     border: none;
     color: white;
     background-color: #45B4D0;
-    padding: 1.3rem 7.9rem;
+    padding: 1.2rem 8rem;
     border-radius: 0.8rem;
     font-family: 'Roboto', sans-serif;
-    /* text-align: center; */
+    text-align: center;
+    align-self: center;
 }
 
 #submit-btn:hover {
@@ -169,7 +169,7 @@ form {
     #img-container, #side-bar ,#img-container img ,#img-container p{
         background-color: #F7F7F7;
         border: none;
-        visibility: hidden;
+        display: none;
     }
     #form-container {
         width: 100vw;
@@ -177,6 +177,7 @@ form {
         align-items: center;
     }
     #container{
+        width: 100vw;
         justify-content: center;
         align-items: center;
     }
