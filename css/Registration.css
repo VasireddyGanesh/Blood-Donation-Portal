@@ -1,19 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,400&display=swap');
+
+
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
-body{
-    font-family: sans-serif;
+
+html{
+    font-size: 62.5%;
+    font-family: 'Roboto', sans-serif;
+    background-color: #F7F7F7;
 }
-#Total_page{
+
+/* #Total_page{
     display: flex;
+} */
+
+a {
+    text-decoration: none;
 }
-#Account_details{
+
+#container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+#side-bar {
+    display: flex;
+    order: 0;
+    width: 20vw;
+    min-height: 100vh;
+    background-color: white;
+    border-right: 0.2rem solid rgb(173, 169, 169);
+    text-align: center;
+    align-self: center;
+    align-items: center;
+    justify-content: center;
+}
+
+#side-bar p {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 580;
+    font-family: 'Roboto', sans-serif;
+}
+
+#brand {
+    /* margin-bottom: 2px; */
+    font-size: 3.0rem;
+    font-weight: bold;
+    color: #151865;
+    font-family: 'Raleway', sans-serif;
+    text-decoration: underline #8b8b8b;
+    padding-top: 2rem;
+}
+
+#tag {
+    font-family: 'Poppins', sans-serif;
+    /* position: relative;
+    padding-left: 2.5rem; */
+    text-align: center;
+    color: black;
+}
+
+#msg {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2rem;
+    font-weight: 600;
+    color: #151865;
+    align-self: center;
+    padding-bottom: 5rem;
+    padding-top: 2rem;
+}
+
+
+
+#form-container {
+    order: 1;
+    align-self: center;
+    /* width: 30vw; */
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: yellowgreen; */
+}
+
+form {
+    padding-bottom: 5rem;
+    display: flex;
+    /* height: 80%; */
+    flex-direction: column;
+    justify-content: space-around;
+    /* background-color: violet; */
+}
+
+label {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.3rem;
+    /* padding-left: 0.5rem; */
+    align-self: flex-start;
+}
+
+#Blood-selection , #male ,#female ,#phone-no ,#address , .date-of-birth{
+    align-self: center;
+    padding: 1rem 2rem 1rem 1.5rem;
+    margin-bottom: 2rem;
+    border-radius: 0.8rem;
+    border: 0.15rem solid #45B4D0;
+}
+
+#registration-btn {
+    border: none;
+    color: white;
+    background-color: #45B4D0;
+    padding: 1.2rem 5rem;
+    border-radius: 1rem;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    align-self: center;
+}
+
+#registration-btn:hover {
+    background-color: tomato;
+}
+
+
+#terms_privacy_policy {
+    font-size: 1.2rem;
+    padding-bottom: 1rem;
+    color: rgb(99, 99, 99);
+}
+
+#img-container {
+    order: 2;
+    width: 50vw;
+    height: auto;
+    align-self: center;
+    float: right;
+    display: flex;
+    flex-direction: column;
+}
+
+#img-container img {
+    max-width: 65%;
+    height: auto;
+    align-self: center;
+}
+
+#img-container p {
+    align-self: center;
+    padding-top: 3rem;
+    text-align: center;
+    font-size: 1.4rem;
+    color: black;
+}
+
+@media only screen and (max-width: 1050px) {
+    #side-bar{
+        display: none;
+    }
+    #form-container{
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 630px) {
+    #img-container{
+        display: none;
+    }
+    #form-container{
+        width: 100%;
+    }
+}
+/* #Account_details{
     width: 30%;
     height: 720px;
     border-right: 1.6px solid rgb(173, 169, 169);
-}
-#Account_details p{
+} */
+/* #Account_details p{
     text-align: center;
     padding-top: 320px;
     font-size: x-large;
@@ -26,61 +198,81 @@ body{
 }
 #main{
     padding-left: 50px;
-}
-#header-text{
-    color: darkblue;
+} */
+
+/* #header-text{
+    color: #151865;
     padding-top: 25px;
     padding-left: 25px;
-}
-#main h2{
+} */
+
+/* #main h2{
    padding-top: 25px;
    padding-left: 50px;
 }
 #main h4{
     padding-top: 20px;
     padding-bottom: 10px;
-}
-#Blood-selection,#DOB{
+} */
+
+/* #Blood-selection{
     padding: 10px;
     font-weight: bold;
     color: rgb(133, 131, 131);
     border: 1.6px solid rgb(173, 169, 169);
     border-radius: 3px;
-}
-#phone-no{
+} */
+
+/* .date-of-birth{
+    padding: 10px;
+    font-weight: bold;
+    color: rgb(133, 131, 131);
+    border: 1.6px solid rgb(173, 169, 169);
+    border-radius: 3px;
+} */
+
+
+/* #phone-no{
     padding: 10px 65px;
     font-weight: bold;
     color: rgb(133, 131, 131);
     border: 1.6px solid rgb(173, 169, 169);  
     border-radius: 3px; 
-}
-textarea{
+} */
+
+/* textarea{
     border: 1.6px solid rgb(173, 169, 169);
     border-radius: 3px;
-}
-#Registration-btn{
+} */
+
+
+
+/* #Registration-btn{
     margin-top: 15px;
     font-weight: bold;
     border: none;
     color: white;
-    background-color: skyblue;
+    background-color: #45B4D0;
     padding: 12px 122px;
     border-radius: 3px;
-}
-#terms_privacy_policy{
+} */
+
+/* #terms_privacy_policy{
     font-size: 13px;
     padding-top: 15px;
     color: darkgray;
-}
+} */
+/* 
 #main-img img{
     width: 75%;
     height: 75%;
     float: right;
     padding-top: 75px;
     align-content: center;
-    /* border-radius: 50%; */
+    border-radius: 50%;
     margin-right: 160px;
 }
+
 #main-img p{
     padding-left: 40px;
-}
+} */

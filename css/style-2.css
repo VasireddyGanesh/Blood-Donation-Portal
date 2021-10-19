@@ -213,8 +213,16 @@ a {
     .header {
         padding-left: 0;
         text-align: center;
+        padding-top: 2%;
     }
     .navbar p{
         text-align: center;
+    }
+    #quote-container{
+        padding-left: 0.5%;
+        padding-right: 0.5%;
+    }
+    #qoute-2 {
+        font-size: 1.3rem;
     }
 }
