@@ -170,6 +170,9 @@ label {
     #form-container{
         width: 50%;
     }
+    #img-container{
+        padding-right: 1%;
+    }
 }
 
 @media only screen and (max-width: 630px) {
@@ -178,6 +181,16 @@ label {
     }
     #form-container{
         width: 100%;
+    }
+    form {
+        padding-bottom: 2rem;
+    }
+    #msg {
+        padding-bottom: 3rem;
+        padding-top: 1rem;
+    }
+    #Blood-selection , #male ,#female ,#phone-no ,#address , .date-of-birth{
+        margin-bottom: 1.5rem;
     }
 }
 /* #Account_details{
