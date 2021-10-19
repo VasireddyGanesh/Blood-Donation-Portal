@@ -52,7 +52,6 @@ a {
 }
 
 #brand {
-    /* margin-bottom: 2px; */
     font-size: 3.0rem;
     font-weight: bold;
     color: #151865;
@@ -63,8 +62,6 @@ a {
 
 #tag {
     font-family: 'Poppins', sans-serif;
-    /* position: relative;
-    padding-left: 2.5rem; */
     text-align: center;
     color: black;
 }
@@ -183,11 +180,11 @@ label {
         width: 100%;
     }
     form {
-        padding-bottom: 2rem;
+        padding-bottom: 1rem;
     }
     #msg {
         padding-bottom: 3rem;
-        padding-top: 1rem;
+        padding-top: 0;
     }
     #Blood-selection , #male ,#female ,#phone-no ,#address , .date-of-birth{
         margin-bottom: 1.5rem;
