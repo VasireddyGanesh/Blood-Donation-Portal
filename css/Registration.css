@@ -113,6 +113,20 @@ label {
     border-radius: 0.8rem;
     border: 0.15rem solid #45B4D0;
 }
+#dob{
+
+  
+
+  border-color: #45B4D0;
+  color: black;
+  background-color: white;
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  align-self: center;
+
+}
 
 #registration-btn {
     border: none;
@@ -190,20 +204,7 @@ label {
         margin-bottom: 1.5rem;
     }
 }
-#dob{
 
-  
-
-  border-color: #45B4D0;
-  color: black;
-  background-color: white;
-  padding: 1rem 2rem;
-  border-radius: 1rem;
-  font-family: 'Roboto', sans-serif;
-  text-align: center;
-  align-self: center;
-
-}
 
 /* #Account_details{
     width: 30%;
