@@ -128,8 +128,9 @@ a {
   margin-bottom: 0.6rem;
 }
 
-#sign_in-btn:hover{
+#sign_in-btn:hover {
   background-color: rgb(255, 114, 94);
+  cursor: pointer;
 }
 
 #signUp{

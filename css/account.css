@@ -107,6 +107,8 @@ header{
     background-color:#45B4D0;
     padding: 1rem 4rem;
     border-radius: 4rem;
+    border: none;
+    cursor: pointer;
 }
 
 #Logout-btn:hover{
@@ -114,6 +116,7 @@ header{
     color: white;
     background-color:tomato;
     padding: 1rem 4rem;
+    cursor: pointer;
 }
 
 
@@ -122,6 +125,7 @@ header{
     flex-direction: column;
     justify-content: space-evenly;
     width: 75%;
+    /* background: rebeccapurple; */
 }
 
 #Right-top{
@@ -129,17 +133,16 @@ header{
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    color: #151865;
-    align-items: center;
     font-size: 1.2rem;
     margin-top: 2rem;
+    /* background: chartreuse; */
 }
 
 #Right-top1 p{
     text-align: center;
-    margin-top: 1.8rem;
+    /* margin-top: 1rem; */
     font-size: 2.2rem;
-    padding-bottom: 1rem;
+    padding-bottom: 2rem;
     font-family:'Poppins', sans-serif ;
 }
 
@@ -150,23 +153,6 @@ header{
     margin-bottom: 1.2rem;
     font-family:'Poppins', sans-serif ;
 }
-
-#Blood-group-selection{
-    border: 1.6px solid rgb(173, 169, 169);
-    padding-left:1rem;
-    padding-right:1rem;
-    padding-top:1rem;
-    padding-bottom:1rem;
-    margin-left: 2rem;
-    margin-bottom: 1.2rem;
-    border-radius: 3rem;
-    font-weight: bold;
-    font-size: 1.5rem;
-    cursor: pointer;
-    text-align: center;
-    font-family: 'Roboto', sans-serif;
-}
-
 
 #Register-btn{
     margin-left: 5rem;
@@ -184,8 +170,30 @@ header{
     font-family: 'Roboto', sans-serif;
 }
 
-#Register-btn:hover{
+#Register-btn:hover {
     background-color: tomato;
+    cursor: pointer;
+}
+
+#search-btn{
+    /* margin-left: 5rem; */
+    font-size: 20px;
+    color: white;
+    background-color:#45B4D0;
+    padding-top:1rem;
+    padding-bottom:1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    border: none;
+    border-radius: 3rem;
+    cursor: pointer;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+#search-btn:hover {
+    background-color: tomato;
+    cursor: pointer;
 }
 
 #Right-bottom{
@@ -210,6 +218,10 @@ footer p{
     color: black;
 }
 
+.sidebar ,#check ,label{
+    display: none;
+}
+
 @media only screen and (max-width: 1150px) {
     #side-bar , #Profile{
         display: none;
@@ -220,6 +232,100 @@ footer p{
         justify-content: space-evenly;
         width: 100vw;
     }
+    .sidebar ,#check ,label{
+        display: block;
+    }
+
+    .sidebar{
+        position: fixed;
+        width: 240px;
+        left: -240px;
+        height: 100%;
+        transition: all .5s ease;
+      }
+      .sidebar{
+         background:linear-gradient(-46deg,#FEE387,#f3dc38,#45B4D0,tomato,#230A52,#D8757E);
+        background-size: 400% 400%;
+        animation: gradient 5s ease infinite;
+      }
+      @keyframes gradient {
+        0%{
+          background-position:0% 50%;
+      
+        }
+          50%{
+          background-position:100% 50%;
+      
+        }
+        100%{
+          background-position:0% 50%;
+      
+        }
+      
+      }
+
+      .sidebar a{
+        display: block;
+        height: 65px;
+        width: 100%;
+        color: #b93632;
+        line-height: 65px;
+        padding-left: 30px;
+        box-sizing: border-box;
+        border-bottom: 1px solid black;
+        border-top: 1px solid rgba(255,255,255,.1);
+        border-left: 5px solid transparent;
+        font-family: 'Open Sans', sans-serif;
+        transition: all .5s ease;
+      }
+      a.active,a:hover{
+        border-left: 5px solid #b93632;
+        color: #b93632;
+      }
+      .sidebar a i{
+        font-size: 23px;
+        margin-right: 16px;
+      }
+      .sidebar a span{
+        letter-spacing: 1px;
+        text-transform: uppercase;
+      }
+      #check{
+        display: none;
+      }
+      label #btn,label #cancel{
+        position: absolute;
+        cursor: pointer;
+        color: white;
+        border-radius: 5px;
+        border: 1px solid #262626;
+        margin: 10px 10px;
+        font-size: 22px;
+        background: #45B4D0;
+        height: 32px;
+        width: 32px;
+        text-align: center;
+        line-height: 32px;
+        transition: all .5s ease;
+      }
+      label #cancel{
+        opacity: 0;
+        visibility: hidden;
+      }
+      #check:checked ~ .sidebar{
+        left: 0;
+      }
+      #check:checked ~ label #btn{
+        margin-left: 245px;
+        opacity: 0;
+        visibility: hidden;
+      }
+      #check:checked ~ label #cancel{
+        margin-left: 245px;
+        opacity: 1;
+        visibility: visible;
+      }
+
 }
 
 @media only screen and (max-width: 780px){
@@ -268,16 +374,18 @@ footer p{
         margin-left: 5rem;
         font-size: 2rem;
     }
-    
+
+     
 }
 
-@media only screen and (max-width: 500px){
+@media only screen and (max-width: 600px){
 
     #Right-side{
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
         width: 100%;
+        padding-bottom: 0%;
     }
     #Right-top1{
         display: flex;

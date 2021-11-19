@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #F7F7F7;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Roboto', sans-serif;
+}
+
+#container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+}
+
+#welcome-msg {
+    font-family: 'Raleway', sans-serif;
+    color: #151865;
+    font-weight: bold;
+    font-size: 2.8rem;
+    margin-bottom: 0.4rem;
+}
+
+.msg {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 0.2rem;
+    margin-bottom: 2rem;
+}
+
+h1 {
+    color: rgb(15, 3, 90);
+}
+
+#tag {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    color: black;
+}
+
+#header {
+    margin-left: 15%;
+    margin-top: 3%;
+}
+
+#brand {
+    margin-bottom: 0.2rem;
+    font-size: 2.8rem;
+    font-weight: bold;
+    color: #151865;
+    font-family: 'Raleway', sans-serif;
+    text-decoration: underline #8b8b8b;
+}
+
+#mainframe {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+#footer {
+    padding-top: 10%;
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+#sign_in-btn {
+    border: none;
+    border-radius: 30px;
+    background-color: #45B4D0;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    color: rgb(255, 255, 255);
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    margin-top: 2rem;
+}
+
+.inputbx {
+    border: solid;
+    background-color: rgb(255, 255, 255);
+    padding-left: 1rem;
+    padding-right: 10rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-width: 0.2rem;
+    border-color: #45B4D0;
+    margin-bottom: 0.6rem;
+}
+
+#sign_in-btn:hover {
+    background-color: rgb(255, 114, 94);
+    cursor: pointer;
+}
+
+#signUp {
+    text-decoration: underline;
+    color: #039ec5;
+    font-size: 1.3rem;
+    padding-left: 1.5rem;
+    font-family: 'Raleway', sans-serif;
+}
+
+#login-img {
+    visibility: hidden;
+}
+
+#container {
+    justify-content: center;
+    align-items: center;
+}
+
+#brand, #tag {
+    text-align: center;
+    position: static;
+}
+
+#header {
+    margin-left: 0;
+    text-align: center;
+}
+
+#mainframe {
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+}
+
+#forgetPassword-msg, #welcome-msg, .msg {
+    align-self: center;
+    text-align: center;
+}
