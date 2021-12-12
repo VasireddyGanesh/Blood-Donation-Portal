@@ -94,7 +94,7 @@ if (isset($_GET['logout'])) {
                 <div id="Right-top1">
                     <p>In need of Blood ? </p>
                     <br>
-                    <a href="Search_Results.php" id="search-btn">Search Blood Group</a><br><br>
+                    <a href="requestForm.php" id="search-btn">Search Blood Group</a><br><br>
                 </div>
                 <div id="Right-top2">
                     <p>Ready to Donate Blood ? </p> <br>

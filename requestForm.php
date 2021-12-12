@@ -57,10 +57,9 @@ if (isset($_GET['logout'])) {
             </div>
         </div>
         <div id="Right-side">
-            <div id="Right-top">
+            <!-- <div id="Right-top">
                 <div id="Right-top1">
-                    <!-- <p>Search Results </p> -->
-                    <!-- <form action="Search_Results.php" method="post">
+                    <form action="Search_Results.php" method="post">
                         <select id="Blood-group-selection" name="blood_group">
                         <option>Blood Group</option>
                         <option value="A+">A+</option>
@@ -73,17 +72,44 @@ if (isset($_GET['logout'])) {
                         <option value="O-">O-</option>
                         </select>
                         <button type="submit" id="search-btn" name="search" value="search">Search</button>
-                    </form> -->
-                <!-- </div>
+                    </form>
+                </div>
                 <div id="Right-top2">
                     <span>
                         <input type="text" id="location" placeholder="Location" style=" padding: 1rem; border-radius: 1.5rem; border: 0.15rem solid #45B4D0;">
                         <button type="submit" id="filter-btn" name="filter">Filter</button>
                     </span>
-                </div> -->
-            </div>
-            <div id="Right-bottom">
+                </div>
+            </div> -->
+
+            <!-- <div id="Right-bottom">
                
+            </div> -->
+            <div class="form-container">
+                <form action="" method="post">
+                    <p>Your Request ID is 1234567789</p>
+                    <div>
+                        <select id="Blood-group-selection" name="blood_group" required>
+                            <option>Blood Group</option>
+                            <option value="A+">A+</option>
+                            <option value="A-">A-</option>
+                            <option value="B+">B+</option>
+                            <option value="B-">B-</option>
+                            <option value="AB+">AB+</option>
+                            <option value="AB-">AB-</option>
+                            <option value="O+">O+</option>
+                            <option value="O-">O-</option>
+                        </select>
+                    </div>
+                    <div>
+                        <!-- <label for="location" class="label">Enter the location where Blood needed</label> -->
+                        <p>
+                        Enter the location where Blood needed  
+                        </p>
+                        <input type="text" id="location" name="location" required>
+                    </div>
+                    <input type="submit" value="Confirm" id="Logout-btn">
+                </form>
             </div>
         </div>
     </div>

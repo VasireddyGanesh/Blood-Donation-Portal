@@ -25,7 +25,7 @@
             <div class="card">
                 <div class="content">
                     <div class="imgbx">
-                        <img src="img/ganesh-3.webp" alt="">
+                        <img src="img/ganesh.png" alt="">
                     </div>
                     <div class="contentbx">
                         <h3>V.Ganesh<br><span>Backend Developer</span></h3>

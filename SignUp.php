@@ -22,7 +22,9 @@ if (isset($_POST['register'])) {
         echo '<script>alert("This Email ID is already registered !");</script>';
     } elseif ($password != $cpassword) {
         echo '<script>alert("Passwords Mis-Match");</script>';
-    } else {
+    }else if(!filter_var(trim($_POST['email']), FILTER_VALIDATE_EMAIL)){
+        echo '<script>alert("Invalid Email Address");</script>';
+    }else {
         $encrypted_passwrd = md5($password);
         $sql = "INSERT INTO `user` (`name`,`email`,`passwrd`) VALUES ('$fname','$email','$encrypted_passwrd')";
         $query = mysqli_query($conn, $sql);

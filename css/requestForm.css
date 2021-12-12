@@ -222,6 +222,44 @@ footer p{
     display: none;
 }
 
+.form-container{
+    min-height: 60%;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 95%;
+}
+
+#location{
+    align-self: center;
+    padding: 1rem 10rem 1rem 1.5rem;
+    margin-bottom: 1rem;
+    border-radius: 0.8rem;
+    border: 0.15rem solid #45B4D0;
+}
+
+#Blood-group-selection {
+    border: 1.6px solid rgb(173, 169, 169);
+    padding: 1rem;
+    /* margin-left: 2rem; */
+    margin-bottom: 1rem;
+    border-radius: 3rem;
+    font-weight: bold;
+    font-size: 1.5rem;
+    cursor: pointer;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    border: 0.15rem solid #45B4D0;
+}
+
+form p{
+    font-size: 12px;
+}
+
 @media only screen and (max-width: 1150px) {
     #side-bar , #Profile{
         display: none;
