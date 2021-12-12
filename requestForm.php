@@ -22,6 +22,7 @@ if (isset($_GET['logout'])) {
     echo "<script type='text/javascript'> document.location = 'index.php'; </script>";
 }
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -29,7 +30,7 @@ if (isset($_GET['logout'])) {
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/Search_Results.css">
+    <link rel="stylesheet" href="css/requestForm.css">
     <title>Find Blood Donor | Blood Request</title>
 </head>
 
@@ -49,7 +50,6 @@ if (isset($_GET['logout'])) {
             <div id="side-bar">
                 <img src="img/profile.png" alt="Your Image">
                 <p><?php echo $active_user; ?></p>
-                <!-- <button id="Logout-btn">Logout</button> -->
                 <br>
                 <form action="account.php" method="get">
                     <input type="submit" value="Logout" name="logout" id="Logout-btn">
@@ -60,7 +60,7 @@ if (isset($_GET['logout'])) {
             <div id="Right-top">
                 <div id="Right-top1">
                     <!-- <p>Search Results </p> -->
-                    <form action="Search_Results.php" method="post">
+                    <!-- <form action="Search_Results.php" method="post">
                         <select id="Blood-group-selection" name="blood_group">
                         <option>Blood Group</option>
                         <option value="A+">A+</option>
@@ -73,15 +73,14 @@ if (isset($_GET['logout'])) {
                         <option value="O-">O-</option>
                         </select>
                         <button type="submit" id="search-btn" name="search" value="search">Search</button>
-                    </form>
-                </div>
+                    </form> -->
+                <!-- </div>
                 <div id="Right-top2">
                     <span>
-                        <!-- <label for="location" id="label">Filter</label> -->
                         <input type="text" id="location" placeholder="Location" style=" padding: 1rem; border-radius: 1.5rem; border: 0.15rem solid #45B4D0;">
                         <button type="submit" id="filter-btn" name="filter">Filter</button>
                     </span>
-                </div>
+                </div> -->
             </div>
             <div id="Right-bottom">
                
