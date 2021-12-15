@@ -21,6 +21,9 @@ if (isset($_GET['logout'])) {
     session_destroy();
     echo "<script type='text/javascript'> document.location = 'index.php'; </script>";
 }
+
+
+
 ?>
 
 <!DOCTYPE html>
@@ -57,36 +60,8 @@ if (isset($_GET['logout'])) {
             </div>
         </div>
         <div id="Right-side">
-            <!-- <div id="Right-top">
-                <div id="Right-top1">
-                    <form action="Search_Results.php" method="post">
-                        <select id="Blood-group-selection" name="blood_group">
-                        <option>Blood Group</option>
-                        <option value="A+">A+</option>
-                        <option value="A-">A-</option>
-                        <option value="B+">B+</option>
-                        <option value="B-">B-</option>
-                        <option value="AB+">AB+</option>
-                        <option value="AB-">AB-</option>
-                        <option value="O+">O+</option>
-                        <option value="O-">O-</option>
-                        </select>
-                        <button type="submit" id="search-btn" name="search" value="search">Search</button>
-                    </form>
-                </div>
-                <div id="Right-top2">
-                    <span>
-                        <input type="text" id="location" placeholder="Location" style=" padding: 1rem; border-radius: 1.5rem; border: 0.15rem solid #45B4D0;">
-                        <button type="submit" id="filter-btn" name="filter">Filter</button>
-                    </span>
-                </div>
-            </div> -->
-
-            <!-- <div id="Right-bottom">
-               
-            </div> -->
             <div class="form-container">
-                <form action="" method="post">
+                <form action="requestForm.php" method="post">
                     <p>Your Request ID is 1234567789</p>
                     <div>
                         <select id="Blood-group-selection" name="blood_group" required>
