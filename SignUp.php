@@ -22,15 +22,17 @@ if (isset($_POST['register'])) {
         echo '<script>alert("This Email ID is already registered !");</script>';
     } elseif ($password != $cpassword) {
         echo '<script>alert("Passwords Mis-Match");</script>';
-    }else if(!filter_var(trim($_POST['email']), FILTER_VALIDATE_EMAIL)){
+    } else if (!filter_var(trim($_POST['email']), FILTER_VALIDATE_EMAIL)) {
         echo '<script>alert("Invalid Email Address");</script>';
-    }else {
-        $encrypted_passwrd = md5($password);
-        $sql = "INSERT INTO `user` (`name`,`email`,`passwrd`) VALUES ('$fname','$email','$encrypted_passwrd')";
-        $query = mysqli_query($conn, $sql);
-        echo '<script>alert("Success");</script>';
+    } else {
+        $_SESSION['activatation_code'] = rand(999999, 111111);
         $_SESSION['sess_user'] = $fname;
-        echo "<script type='text/javascript'> document.location = 'account.php'; </script>";
+        $_SESSION['email'] = $email;
+        $_SESSION['password']=$password;
+        $sub = "Account Confirmation [Important]";
+        $msg = "Hi ". $fname . "\nYour Confirmation Code is " . $_SESSION['activatation_code'];
+        mail($email, $sub, $msg);
+        echo "<script type='text/javascript'> document.location = 'account_confirmation.php'; </script>";
     }
 }
 ?>
@@ -85,6 +87,7 @@ if (isset($_POST['register'])) {
                         }
                         $(document).ready(function() {
                             $("#cpasswrd").keyup(checkSecPassMatch);
+                            $("#passwrd").keyup(checkSecPassMatch);
                         });
                     </script>
                 </span>

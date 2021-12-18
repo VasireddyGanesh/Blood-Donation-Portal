@@ -22,6 +22,26 @@ if (isset($_GET['logout'])) {
     echo "<script type='text/javascript'> document.location = 'index.php'; </script>";
 }
 
+if (isset($_POST['confirm'])) {
+    $blood_group = $_POST['blood_group'];
+    $location = $_POST['location'];
+    $sql = "SELECT `email` FROM `donor` WHERE `blood_group` = '$blood_group'";
+    $query = mysqli_query($conn, $sql);
+    if (mysqli_num_rows($query) > 0) {
+        $sub = "Blood Request [Important]";
+        // $row = mysqli_fetch_assoc($query);
+        while ($row = mysqli_fetch_assoc($query)){
+            $mail =$row['email'];
+            $msg = "Some is in need of " . $blood_group . " Blood group . Click here to accept or reject " . "http://localhost/TestEmail/response.php?receiver_email=".$mail."&sender_email=". $_SESSION['email'];
+            mail($mail, $sub, $msg);
+            echo "$mail";
+        }
+        // echo '<script>alert("Donors with requested Blood Group are Notified");</script>';
+        // echo "<script type='text/javascript'> document.location = 'account.php'; </script>";
+    }else{
+        echo '<script>alert("No Donors with requested Blood Group");</script>';
+    }
+}
 
 
 ?>
@@ -34,7 +54,7 @@ if (isset($_GET['logout'])) {
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/requestForm.css">
-    <title>Find Blood Donor | Blood Request</title>
+    <title>Blood Request|Find Blood Donor</title>
 </head>
 
 <body>
@@ -62,7 +82,7 @@ if (isset($_GET['logout'])) {
         <div id="Right-side">
             <div class="form-container">
                 <form action="requestForm.php" method="post">
-                    <p>Your Request ID is 1234567789</p>
+                    <p id="form-header">Blood Request</p>
                     <div>
                         <select id="Blood-group-selection" name="blood_group" required>
                             <option>Blood Group</option>
@@ -77,13 +97,12 @@ if (isset($_GET['logout'])) {
                         </select>
                     </div>
                     <div>
-                        <!-- <label for="location" class="label">Enter the location where Blood needed</label> -->
-                        <p>
-                        Enter the location where Blood needed  
+                        <p style="padding-left: 3px;">
+                            Enter the location where Blood needed
                         </p>
-                        <input type="text" id="location" name="location" required>
+                        <input type="text" id="location" name="location" placeholder="location" required>
                     </div>
-                    <input type="submit" value="Confirm" id="Logout-btn">
+                    <input type="submit" name="confirm" value="Confirm" id="Logout-btn">
                 </form>
             </div>
         </div>

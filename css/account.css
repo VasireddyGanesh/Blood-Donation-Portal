@@ -138,25 +138,50 @@ header{
     /* background: chartreuse; */
 }
 
-#Right-top1 p{
+.suggestion{
     text-align: center;
     /* margin-top: 1rem; */
     font-size: 2.2rem;
-    padding-bottom: 2rem;
+    padding-bottom: 1rem;
     font-family:'Poppins', sans-serif ;
 }
 
-#Right-top2 p{
+#Right-top1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    /* background-color: yellow; */
     text-align: center;
-    font-size: 2.2rem;
-    padding-bottom: 1rem;
-    margin-bottom: 1.2rem;
-    font-family:'Poppins', sans-serif ;
+    padding-bottom: 0;
+}
+
+#pointer{
+    text-align: center;
+    font-weight: 400;
+    font-size: 1.1rem;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 1rem;
+}
+
+#pointer a:hover{
+    color: tomato;
+}
+
+#Right-top2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    align-items: center;
+    /* background-color: yellow ; */
+    text-align: center;
 }
 
 #Register-btn{
-    margin-left: 5rem;
-    font-size: 20px;
+    /* margin-left: 5rem; */
+    margin-bottom: 2.3rem;
+    font-size: 130%;
     color: white;
     background-color:#45B4D0;
     padding-top:1rem;
@@ -177,7 +202,7 @@ header{
 
 #search-btn{
     /* margin-left: 5rem; */
-    font-size: 20px;
+    font-size: 130%;
     color: white;
     background-color:#45B4D0;
     padding-top:1rem;
@@ -371,8 +396,8 @@ footer p{
         width:100vw;
     }
     #Register-btn{
-        margin-left: 5rem;
         font-size: 2rem;
+        font-size: 130%;
     }
 
      

@@ -9,7 +9,6 @@ $db = "blood_donation";
 
 $conn = mysqli_connect($server, $user, $password, $db);
 
-
 if (isset($_SESSION["sess_user"])) {
     $active_user = $_SESSION["sess_user"];
 } else {
@@ -22,11 +21,7 @@ if (isset($_GET['logout'])) {
     session_destroy();
     echo "<script type='text/javascript'> document.location = 'index.php'; </script>";
 }
-
 ?>
-
-
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -34,9 +29,9 @@ if (isset($_GET['logout'])) {
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/account.css">
+    <link rel="stylesheet" href="css/Search_Results.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
-    <title>Account</title>
+    <title>Find Blood Donor | Search </title>
 </head>
 
 <body>
@@ -56,6 +51,7 @@ if (isset($_GET['logout'])) {
         <i class="fas fa-times" id="cancel"></i>
     </label>
     <div class="sidebar">
+        <!-- <header>Menu</header> -->
         <a href="account.php" class="active">
             <i class="fas fa-qrcode"></i>
             <span>Dashboard</span>
@@ -88,26 +84,52 @@ if (isset($_GET['logout'])) {
             </div>
         </div>
         <div id="Right-side">
-            <div id="Right-top">
-                <div id="Right-top1">
-                    <p class="suggestion">In need of Blood ? </p>
-                    <br>
-                    <a href="requestForm.php" id="search-btn">Blood Request</a><br><br>
-                    <p id="pointer">
-                        <a href="bloodRequest_status.php" style="text-decoration: underline;">Click here</a> to check the status of blood request
-                    </p>
-                </div>
-                <div id="Right-top2">
-                    <p class="suggestion">Ready to Donate Blood ? </p> <br>
-                    <a href="Registration.php" id="Register-btn">Register</a><br><br>
-                </div>
+            <div style="text-align: center; margin-top: 3rem;font-size:150%;text-decoration: underline; margin-bottom: 2rem;">
+                <h3>
+                    List of Donors Accepted your Blood Request
+                </h3>
             </div>
-            <div id="Right-bottom">
-                <img src="img/Accn_Page-nurse.png" alt="Image">
-                <footer>
-                    <p>Donate Blood and be a Hero of someone's life</p>
-                </footer>
-            </div>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">Name</th>
+                        <th scope="col">Contact</th>
+                        <th scope="col">Address</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <?php
+
+                    $server = "localhost";
+                    $user = "root";
+                    $password = "";
+                    $db = "blood_donation";
+                    $conn = mysqli_connect($server, $user, $password, $db);
+
+                    $email = $_SESSION['email'];
+                    $query = "SELECT `donor_email` FROM `blood_requests` WHERE `recipient_email`='$email' ";
+                    if ($result = mysqli_query($conn, $query)) {
+                        if (mysqli_num_rows($result) >= 1) {
+                            while ($row = mysqli_fetch_assoc($result)) {
+                                $mail = $row['donor_email'];
+                                $query1 = "SELECT * FROM `donor` WHERE `email`='$mail' ";
+                                $result1 = mysqli_query($conn, $query1);
+                                $row1 = mysqli_fetch_assoc($result1);
+                                $field1name = $row1["name"];
+                                $field2name = $row1["ph_no"];
+                                $field3name = $row1["address"];
+                                echo '<tr> 
+                                                          <td>' . $field1name . '</td> 
+                                                          <td>' . $field2name . '</td> 
+                                                          <td>' . $field3name . '</td>  
+                                                      </tr>';
+                            }
+                            $result->free();
+                        }
+                    }
+                    ?>
+                </tbody>
+            </table>
         </div>
     </div>
 </body>

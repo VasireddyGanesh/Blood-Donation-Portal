@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    height: 100vh;
+
+    background: linear-gradient( rgb(211, 195, 204),#45b4D0);
+
+    background-repeat: no-repeat;
+}
+
+#brand {
+    margin-bottom: 0.2rem;
+    font-size: 2.8rem;
+    font-weight: bold;
+    color: #151865;
+    font-family: 'Raleway', sans-serif;
+    text-decoration: underline #8b8b8b;
+}
+
+#tag {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    color: black;
+}
+
+#header {
+    text-align: center;
+    margin-top: 5%;
+}
+
+#outer-container {
+    /* background-color: yellow; */
+    height: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#button-container {
+    /* background-color: violet; */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+#accept-btn {
+    background: rgb(28, 184, 65);
+    padding: 1rem 2.5rem;
+    margin: 1rem;
+    border-radius: 1.5rem;
+    cursor: pointer;
+    color: white;
+    border-color: black;
+}
+
+#reject-btn {
+    background-color: red;
+    padding: 1rem 2.5rem;
+    margin: 1rem;
+    border-radius: 1.5rem;
+    cursor: pointer;
+    color: white;
+    border-color: black;
+}
+
+.glassmorphism {
+    box-shadow: 0 -6px 16px 3px rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    min-width: 40%;
+    border-radius: 5px;
+    height: auto;
+    padding: 3%;
+}
+
+.glassmorphism:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.outer-container {
+    padding: 2px 16px;
+}

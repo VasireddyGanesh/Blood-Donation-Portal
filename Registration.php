@@ -15,7 +15,8 @@
         $gender=$_POST['gender'];
         $phone_no= $_POST['ph_no'];
         $adress= $_POST['address'];
-        $sql = "INSERT INTO `donor` (`name`,`blood_group`,`dob`,`gender`,`ph_no`,`address`) VALUES ('$fname','$blood_group','$date_of_birth','$gender','$phone_no','$adress')";
+        $mail=$_SESSION['email'];
+        $sql = "INSERT INTO `donor` (`name`,`email`,`blood_group`,`dob`,`gender`,`ph_no`,`address`) VALUES ('$fname','$mail','$blood_group','$date_of_birth','$gender','$phone_no','$adress')";
         $query = mysqli_query($conn, $sql);
 
         if (isset($query)) {
@@ -49,18 +50,12 @@
             <p>Account Details</p>
         </div>
         <div id="form-container">
-            <!-- <div id="header-text">
-                    <h1>Find Blood Donor</h1>
-                    <h5>We Help you in finding Blood Donors</h5>
-                </div> -->
             <div id="header-text">
                 <a href="index.php" style="text-decoration: none;">
                     <p id="brand">Find Blood Donor</p>
                     <p id="tag">We Help you in finding Blood Donors</p>
                 </a>
             </div>
-
-            <!-- <p>Blood group</p> -->
             <form action="Registration.php" method="post">
                 <div id="msg">
                     <p>Registration Form !</p>
@@ -79,12 +74,10 @@
                         <option value="O-">O-</option>
                     </select><br>
                 </div>
-                <!-- <h4>Date of Birth</h4> -->
                 <div>
                     <label for="DOB">Date of Birth</label><br>
                     <input type="date" name="dob" id="DOB" class="date-of-birth" required>
                 </div>
-                <!-- <h4>Gender</h4> -->
                 <div>
                     <label for="gender">Gender</label><br>
                     <input id="male" type="radio" name="gender" value="Male" required>
@@ -93,12 +86,10 @@
                     <label for="female">Female</label>
                     <br>
                 </div>
-                <!-- <h4>Phone Number</h4> -->
                 <div>
                     <label for="phone-no">Phone Number</label><br>
                     <input type="text" placeholder="Enter valid phone number" name="ph_no" id="phone-no" required ><br>
                 </div>
-                <!-- <h4>Address</h4> -->
                 <div>
                     <label for="address">City</label><br>
                     <textarea id="address" rows="6" cols="30" name="address" required>

@@ -1,0 +1,132 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,400&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+html{
+    font-size: 62.5%;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    height: 100vh;
+
+    background: linear-gradient(white,#45B4D0);
+
+    background-attachment: fixed;
+
+    background-repeat: no-repeat;
+
+    background-size: cover;
+
+}
+
+.glassmorphism {
+
+    width: 25vw;
+
+    height: 50vh;
+
+    border-radius: 10%;
+
+    position: relative;
+
+    overflow: hidden;
+
+    box-shadow: 0 0.5% 1% rgba(46, 45, 45, 0.3);
+
+    position: fixed;
+    backdrop-filter: blur(50px);
+}
+
+.glassmorphism::before {
+
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+
+    right: 0;
+
+    bottom: 0;
+
+    left: 0;
+
+    box-shadow: inset 0 0 100px rgba(31, 30, 30, 0.5);
+
+    margin: -4px
+}
+
+#brand {
+    margin-bottom: 0.2rem;
+    font-size: 2.8rem;
+    font-weight: bold;
+    color: #151865;
+    font-family: 'Raleway', sans-serif;
+    text-decoration: underline #8b8b8b;
+}
+
+#tag {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    color: black;
+}
+
+#header{
+    text-align: center;
+    margin-top: 5%;
+}
+
+#outer-container{
+    /* background-color: yellow; */
+    height: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#button-container{
+    /* background-color: violet; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+#accept-btn{
+    background: rgb(28, 184, 65);
+    padding: 1rem 2.5rem;
+    margin: 1rem;
+    border-radius: 1.5rem;
+    cursor: pointer;
+    border: none;
+    color: white;
+    text-decoration: none;
+}
+
+#reject-btn{
+    background-color: red;
+    padding: 1rem 2.5rem;
+    margin: 1rem;
+    border-radius: 1.5rem;
+    cursor: pointer;
+    border: none;
+    color: white;
+}

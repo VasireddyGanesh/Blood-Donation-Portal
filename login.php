@@ -21,6 +21,7 @@ if (isset($_POST['submit'])) {
   if (mysqli_num_rows($query)==1) {
     $row = mysqli_fetch_assoc($query);
     $_SESSION['sess_user'] = $row['name'];
+    $_SESSION['email'] = $username;
     // echo "<script type='text/javascript'> document.location = 'account.php'; </script>";
     echo "<script>location.replace('account.php');</script>";
   } else {

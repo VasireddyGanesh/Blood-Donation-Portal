@@ -181,7 +181,6 @@ a {
     #MainFrame {
         padding-top: 2%;
         padding-bottom: 2%;
-        /* background: yellow; */
     }
     #box {
         justify-content: center;
@@ -220,8 +219,6 @@ a {
         justify-content:space-between;
         align-items: center;
         height: 78vh;
-        /* padding: 5%; */
-        /* background: violet; */
         margin: 0%;
         padding: 0%;
     }

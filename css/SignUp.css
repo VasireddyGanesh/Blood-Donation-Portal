@@ -94,9 +94,8 @@ form {
 .label {
     font-family: 'Roboto', sans-serif;
     font-size: 1.3rem;
-    padding-left: 0.5rem;
+    padding-left: 1.2rem;
     align-self: flex-start;
-    /* padding-bottom: 0.5rem; */
 }
 
 #full-name, #email-address, #passwrd ,#cpasswrd {
@@ -108,7 +107,7 @@ form {
 }
 
 #passwrd ,#cpasswrd {
-    margin-bottom: 2rem;
+    margin-bottom: 1.2rem;
 }
 
 #tag {
@@ -168,6 +167,10 @@ form {
     color: black;
 }
 
+#CheckSecPassMatch{
+    height: 2rem;
+}
+
 @media only screen and (max-width: 940px) {
     #img-container, #side-bar ,#img-container img ,#img-container p{
         background-color: #F7F7F7;
@@ -178,13 +181,11 @@ form {
         width: 100vw;
         justify-content: flex-start;
         align-items: center;
-        /* background: yellow; */
     }
     #container{
         width: 100vw;
         justify-content: center;
         align-items: center;
-        /* background: rebeccapurple; */
     }
     form {
         padding-bottom: 5rem;
