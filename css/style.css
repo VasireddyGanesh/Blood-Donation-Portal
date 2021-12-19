@@ -183,10 +183,12 @@ a {
         padding-bottom: 2%;
     }
     #box {
+        /* background-color: yellow; */
         justify-content: center;
         align-items: center;
         margin: 0;
         padding: 0%;
+        flex-grow: 1;
     }
     .header {
         padding-left: 0;
@@ -208,6 +210,8 @@ a {
     }
     #qoute-2 {
         font-size: 1.3rem;
+        margin-bottom: auto;
+        margin-top: auto;
     }
     #qoute {
         font-size: 1.4rem;
@@ -216,10 +220,11 @@ a {
     #box-container{
         display: flex;
         flex-direction: column;
-        justify-content:space-between;
+        justify-content:center;
         align-items: center;
-        height: 78vh;
+        height: 65vh;
         margin: 0%;
         padding: 0%;
+        /* background-color: violet; */
     }
 }

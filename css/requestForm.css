@@ -271,11 +271,17 @@ form p{
     #side-bar , #Profile{
         display: none;
     }
+
+    #main{
+        height: 80vh;
+    }
+
     #Right-side{
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
         width: 100vw;
+        height: 100%;
     }
     .sidebar ,#check ,label{
         display: block;
@@ -423,13 +429,19 @@ form p{
      
 }
 
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 700px){
 
+    #main{
+        flex-grow: 1;
+        background-color:#262626;
+        height: 80vh;
+    }
     #Right-side{
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
         width: 100%;
+        height: 100%;
         padding-bottom: 0%;
     }
     #Right-top1{
