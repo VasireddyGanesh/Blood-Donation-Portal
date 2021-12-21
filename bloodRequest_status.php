@@ -84,7 +84,7 @@ if (isset($_GET['logout'])) {
             </div>
         </div>
         <div id="Right-side">
-            <div style="text-align: center; margin-top: 3rem;font-size:150%;text-decoration: underline; margin-bottom: 2rem;">
+            <div id="search-heading">
                 <h3>
                     List of Donors Accepted your Blood Request
                 </h3>

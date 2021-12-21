@@ -51,7 +51,7 @@
         </div>
         <div id="form-container">
             <div id="header-text">
-                <a href="index.php" style="text-decoration: none;">
+                <a href="" style="text-decoration: none;">
                     <p id="brand">Find Blood Donor</p>
                     <p id="tag">We Help you in finding Blood Donors</p>
                 </a>
@@ -88,12 +88,11 @@
                 </div>
                 <div>
                     <label for="phone-no">Phone Number</label><br>
-                    <input type="text" placeholder="Enter valid phone number" name="ph_no" id="phone-no" required ><br>
+                    <input type="text" placeholder="Phone number" name="ph_no" id="phone-no" required ><br>
                 </div>
                 <div>
                     <label for="address">City</label><br>
-                    <textarea id="address" rows="6" cols="30" name="address" required>
-                    </textarea>
+                    <input type="text" id="address" name="address" required placeholder="Address">
                     <br>
                 </div>
                 <button type="submit" id="registration-btn" name="register">Register</button>

@@ -32,12 +32,13 @@ if (isset($_POST['confirm'])) {
         // $row = mysqli_fetch_assoc($query);
         while ($row = mysqli_fetch_assoc($query)){
             $mail =$row['email'];
-            $msg = "Some is in need of " . $blood_group . " Blood group . Click here to accept or reject " . "http://localhost/TestEmail/response.php?receiver_email=".$mail."&sender_email=". $_SESSION['email'];
+            $msg = "Someone is in need of " . $blood_group . " Blood group . 
+            Location : ".$location. "\nClick here to accept or reject " . "http://localhost/TestEmail/response.php?receiver_email=".$mail."&sender_email=". $_SESSION['email'];
             mail($mail, $sub, $msg);
             echo "$mail";
         }
-        // echo '<script>alert("Donors with requested Blood Group are Notified");</script>';
-        // echo "<script type='text/javascript'> document.location = 'account.php'; </script>";
+        echo '<script>alert("Donors with requested Blood Group are Notified");</script>';
+        echo "<script type='text/javascript'> document.location = 'account.php'; </script>";
     }else{
         echo '<script>alert("No Donors with requested Blood Group");</script>';
     }
@@ -54,6 +55,7 @@ if (isset($_POST['confirm'])) {
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/requestForm.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
     <title>Blood Request|Find Blood Donor</title>
 </head>
 
@@ -68,6 +70,32 @@ if (isset($_POST['confirm'])) {
             <a href="#Contact" id="contact">Contact</a>
         </div>
     </header>
+    <input type="checkbox" id="check">
+    <label for="check">
+        <i class="fas fa-bars" id="btn"></i>
+        <i class="fas fa-times" id="cancel"></i>
+    </label>
+    <div class="sidebar">
+        <a href="account.php" class="active">
+            <i class="fas fa-qrcode"></i>
+            <span>Dashboard</span>
+        </a>
+
+        <a href="account.php?logout=true">
+            <i class="far fa-question-circle"></i>
+            <span>LogOut</span>
+        </a>
+
+        <a href="About.php">
+            <i class="fas fa-stream"></i>
+            <span>About</span>
+        </a>
+
+        <a href="contact.php">
+            <i class="far fa-envelope"></i>
+            <span>Contact</span>
+        </a>
+    </div>
     <div id="main">
         <div id="Profile">
             <div id="side-bar">

@@ -63,7 +63,7 @@ a {
     color: black;
 }
 
-#msg {
+#msg p{
     font-family: 'Roboto', sans-serif;
     font-size: 2rem;
     font-weight: 600;
@@ -120,6 +120,8 @@ label {
     font-family: 'Roboto', sans-serif;
     text-align: center;
     align-self: center;
+    cursor: pointer;
+    margin-top: 2rem;
 }
 
 #registration-btn:hover {
@@ -175,15 +177,23 @@ label {
     }
     #form-container{
         width: 100%;
-    }
-    form {
-        padding-bottom: 1rem;
-    }
-    #msg {
-        padding-bottom: 3rem;
-        padding-top: 0;
+        height: 92vh;
     }
     #Blood-selection , #male ,#female ,#phone-no ,#address , .date-of-birth{
         margin-bottom: 1.5rem;
+    }
+    #msg p{
+        padding-bottom: 4rem;
+        padding-top: 0;
+        text-align: center;
+    }
+    form {
+        padding-bottom: 5rem;
+        justify-content: space-evenly;
+        /* background-color: yellowgreen; */
+    }
+    #container {
+        /* background-color: yellow; */
+        justify-content: space-evenly;
     }
 }

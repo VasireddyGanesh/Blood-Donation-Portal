@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <title>Find Blood Donor | About</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
     <link rel="stylesheet" type="text/css" href="css/About.css">
+    <title>About Us|Find Blood Donor</title>
 </head>
-
 <body>
     <div id="header">
         <div id="header-text">
@@ -37,8 +37,8 @@
                     <li style="--i:1">
                         <a href="#"><i class="fa fa-angle-double-right" aria-hidden="true"></i>
 
-             <li style="--i:2">
-                 <a href="mailto:vasireddi.ganesh.8@gmail.com?subject=Find Blood Donor"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+                    <li style="--i:2">
+                        <a href="mailto:vasireddi.ganesh.8@gmail.com?subject=Find Blood Donor"><i class="fa fa-envelope" aria-hidden="true"></i></a>
                     </li>
 
                     <li style="--i:3">
@@ -63,8 +63,8 @@
                     <li style="--i:1">
                         <a href="#"><i class="fa fa-angle-double-right" aria-hidden="true"></i>
 
-             <li style="--i:2">
-                 <a href="mailto:satishnallamadugu@gmail.com?subject=Find Blood Donor"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+                    <li style="--i:2">
+                        <a href="mailto:satishnallamadugu@gmail.com?subject=Find Blood Donor"><i class="fa fa-envelope" aria-hidden="true"></i></a>
                     </li>
                     <li style="--i:3">
                         <a href="https://www.instagram.com/satishchowdary123/"> <i class='fab fa-instagram' style='font-size:24px;color:red' aria-hidden="true"></i></a>
@@ -87,8 +87,8 @@
                     <li style="--i:1">
                         <a href="#"><i class="fa fa-angle-double-right" aria-hidden="true"></i>
 
-             <li style="--i:2">
-                 <a href="mailto:yaswanthpandrangi@gmail.com?subject=Find Blood Donor"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+                    <li style="--i:2">
+                        <a href="mailto:yaswanthpandrangi@gmail.com?subject=Find Blood Donor"><i class="fa fa-envelope" aria-hidden="true"></i></a>
                     </li>
                     <li style="--i:3">
                         <a href="https://www.instagram.com/yaswanth_._/?utm_medium=copy_link"> <i class='fab fa-instagram' style='font-size:24px;color:red' aria-hidden="true"></i></a>
@@ -111,18 +111,16 @@
                     <li style="--i:1">
                         <a href="#"><i class="fa fa-angle-double-right" aria-hidden="true"></i>
 
-             <li style="--i:2">
-                 <a href="mailto:shaikfiroze186@gmail.com?subject=Find Blood Donor"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+                    <li style="--i:2">
+                        <a href="mailto:shaikfiroze186@gmail.com?subject=Find Blood Donor"><i class="fa fa-envelope" aria-hidden="true"></i></a>
                     </li>
-    
+
                 </ul>
 
             </div>
 
         </div>
     </section>
-    <div class="your-element"></div>
-
     <script type="text/javascript" src="vanilla-tilt.js"></script>
     <script type="text/javascript">
         VanillaTilt.init(document.querySelector(".card"), {

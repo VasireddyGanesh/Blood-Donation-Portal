@@ -20,8 +20,6 @@ html {
     display: flex;
     align-items: center;
     color: #151865;
-    /* border-bottom: 0.2rem solid rgb(173, 169, 169); */
-    /* background-color: violet; */
 }
 
 #brand {
@@ -47,9 +45,9 @@ body {
     flex-direction: column;
 }
 
-section {
+/* section {
     position: relative;
-}
+} */
 
 .about p {
     font-family: 'Roboto', sans-serif;
@@ -66,9 +64,8 @@ section {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%; */
-  /* background: linear-gradient(#f00,#f0f);
-  clip-path: circle(30% at right 70%) */
+  height: 100%;
+  clip-path: circle(30% at right 70%)
 }
 
 section ::after {
@@ -79,7 +76,8 @@ section ::after {
     right: 0;
     width: 100%;
     height: 100%;
-}
+} */
+
 .container {
     position: relative;
     z-index: 1;
@@ -88,6 +86,7 @@ section ::after {
     align-items: center;
     flex-wrap: wrap;
     margin: 40px 0;
+    flex-direction: row;
 }
 .container .card {
     position: relative;
@@ -113,7 +112,7 @@ section ::after {
 }
 .card:hover {
     opacity: 1;
-    transform: translate(-20px);
+    /* transform: translate(-20px); */
 }
 .container .card .content .imgbx {
     position: relative;
@@ -171,6 +170,15 @@ section ::after {
     font-size: 24px;
 }
 @media only screen and (max-width: 900px) {
+    body {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background: linear-gradient(#f7f7f7, #45B4D0);
+        min-height: 100vh;
+        flex-direction: column;
+    }
+
     #header {
         margin-top: 2%;
         margin-bottom: 4%;
@@ -179,16 +187,30 @@ section ::after {
     .about p {
         font-family: 'Roboto', sans-serif;
         text-align: center;
-        padding: 3%;
+        padding: 5%;
         font-size: 1.2rem;
     }
     
     .container {
+        position: static;
+        display: flex;
         flex-direction: column;
         flex-wrap: nowrap;
     }
     .container .card {
+        position: static;
+        display: flex;
         flex-direction: column;
         flex-wrap: nowrap;
+        width: 250px;
+        height: 300px;
+    }
+
+    .container .card .sci {
+        position: static;
+        bottom: 0px;
+    }
+    .container .card .content {
+        position: static;
     }
 }
