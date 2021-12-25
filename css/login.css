@@ -160,6 +160,7 @@ a {
     #brand , #tag{
       text-align: center;
       position: static;
+      padding-left: 0;
     }
     #header{
       margin-left: 0;

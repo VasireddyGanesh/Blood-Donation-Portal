@@ -193,4 +193,12 @@ form {
     #msg {
         padding-top: 2rem;
     }
+    #brand {
+        padding-top: 1.5rem;
+    }
+    #tag {
+        position: static;
+        padding-left: 0;
+        text-align: center;
+    }
 }

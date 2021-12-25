@@ -45,7 +45,7 @@ if (isset($_POST['submit'])) {
             <form id="side" method="POST" action="verify_email.php">
 
                 <p id="welcome-msg">Email Confirmation !</p>
-                <p class="msg">Enter valid Activation Code</p>
+                <p class="msg">Enter valid Confirmation Code</p>
 
                 <div class id="mainframe">
 
