@@ -8,15 +8,6 @@ $db = "blood_donation";
 
 $conn = mysqli_connect($server, $user, $password, $db);
 
-// if (!(isset($_POST['accept'])) && !(isset($_POST['reject']))) {
-//     $_SESSION['s_email'] = $_GET['sender_email'];
-//     $_SESSION['r_email'] = $_GET['receiver_email'];
-// }else{
-//     $sender_email=$_SESSION['s_email'];
-//     $receiver_email=$_SESSION['r_email'];
-//     $sql = "INSERT INTO `blood_requests` (`recipient_email`,`donor_email`) VALUES ('$sender_email','$receiver_email')";
-//     $query = mysqli_query($conn, $sql);
-// }
 if (!(isset($_POST['accept'])) && !(isset($_POST['reject']))){
     $_SESSION['s_email'] = $_GET['sender_email'];
     $_SESSION['r_email'] = $_GET['receiver_email'];

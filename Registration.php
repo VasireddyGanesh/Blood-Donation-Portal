@@ -16,14 +16,21 @@
         $phone_no= $_POST['ph_no'];
         $adress= $_POST['address'];
         $mail=$_SESSION['email'];
-        $sql = "INSERT INTO `donor` (`name`,`email`,`blood_group`,`dob`,`gender`,`ph_no`,`address`) VALUES ('$fname','$mail','$blood_group','$date_of_birth','$gender','$phone_no','$adress')";
-        $query = mysqli_query($conn, $sql);
-
-        if (isset($query)) {
-            echo '<script>alert("Success");</script>';
-            echo "<script type='text/javascript'> document.location = 'account.php'; </script>";
+        $sql2="SELECT * FROM `donor` WHERE `email` = '$mail'";
+        $query2=mysqli_query($conn,$sql2);
+        if(mysqli_num_rows($query2)==0){
+            $sql = "INSERT INTO `donor` (`name`,`email`,`blood_group`,`dob`,`gender`,`ph_no`,`address`) VALUES ('$fname','$mail','$blood_group','$date_of_birth','$gender','$phone_no','$adress')";
+            $query = mysqli_query($conn, $sql);
+    
+            if (isset($query)) {
+                echo '<script>alert("Success");</script>';
+                echo "<script type='text/javascript'> document.location = 'account.php'; </script>";
+            }else{
+                echo '<script>alert("Registration Failed ! Please Try Again");</script>';
+                echo "<script type='text/javascript'> document.location = 'account.php'; </script>";
+            }
         }else{
-            echo "Registration Failed ! Please Try Again" ;
+            echo '<script>alert("You are already a registered Donor !");</script>';
             echo "<script type='text/javascript'> document.location = 'account.php'; </script>";
         }
     }

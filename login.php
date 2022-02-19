@@ -22,11 +22,8 @@ if (isset($_POST['submit'])) {
     $row = mysqli_fetch_assoc($query);
     $_SESSION['sess_user'] = $row['name'];
     $_SESSION['email'] = $username;
-    // echo "<script type='text/javascript'> document.location = 'account.php'; </script>";
     echo "<script>location.replace('account.php');</script>";
   } else {
-    // echo "<script type='text/javascript'> document.location = 'index.php'; </script>";
-    // echo "<script>location.replace('login.php');</script>";
     echo '<script>alert("UserName Or Password Incorrect");</script>';
   }
 }

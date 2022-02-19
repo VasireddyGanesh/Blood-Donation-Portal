@@ -19,21 +19,21 @@ if (isset($_POST['submit'])) {
     if ($email_count) {
         $row = mysqli_fetch_array($query);
         $fname = $row['name'];
-        $subject = "PASSWORD RECOVERY [IMPORTANT]";
-        $code=rand(999999, 111111);
-        $_SESSION['name']=$fname;
-        $_SESSION['email']=$username;
-        $body = "Hi ". $fname. " ,\nHere is the confirmation code to reset your password ".$code;
+        $subject = "PASSWORD RECOVERY [IMPORTANT]"; 
+        $code = rand(999999, 111111);
+        $_SESSION['name'] = $fname;
+        $_SESSION['email'] = $username;
+        $body = "Hi " . $fname . " ,\nHere is the confirmation code to reset your password " . $code;
         // $sender_email = "find.blood.donor0@gmail.com";
         if (mail($username, $subject, $body)) {
             $_SESSION['msg'] = "Check your mail !";
-            $_SESSION['activation_code']=$code;
+            $_SESSION['activation_code'] = $code;
             header('location:verify_email.php');
         } else {
-            echo "Email Sending Failed";
+            echo '<script>alert("Email Sending Failed");</script>';
         }
     } else {
-        echo "No email Found !";
+        echo '<script>alert("No email Found !");</script>';
     }
 }
 

@@ -25,21 +25,22 @@ if (isset($_GET['logout'])) {
 if (isset($_POST['confirm'])) {
     $blood_group = $_POST['blood_group'];
     $location = $_POST['location'];
-    $sql = "SELECT `email` FROM `donor` WHERE `blood_group` = '$blood_group'";
+    $sql = "SELECT `email` FROM `donor` WHERE `blood_group` = '$blood_group' AND `email` <> '$_SESSION[email]' ";
     $query = mysqli_query($conn, $sql);
     if (mysqli_num_rows($query) > 0) {
         $sub = "Blood Request [Important]";
-        // $row = mysqli_fetch_assoc($query);
-        while ($row = mysqli_fetch_assoc($query)){
-            $mail =$row['email'];
-            $msg = "Someone is in need of " . $blood_group . " Blood group . 
-            Location : ".$location. "\nClick here to accept or reject " . "http://localhost/TestEmail/response.php?receiver_email=".$mail."&sender_email=". $_SESSION['email'];
+        $temp_mail=$_SESSION['email'];
+        $sql2="DELETE FROM `blood_requests` WHERE `recipient_email`='$temp_mail'";
+        $query2=mysqli_query($conn,$sql2);
+        while ($row = mysqli_fetch_assoc($query)) {
+            $mail = $row['email'];
+            $msg = "Someone is in need of " . $blood_group . " Blood group .\n\nLocation : " . $location . "\n\nClick here to accept or reject " . "http://localhost/TestEmail/response.php?receiver_email=" . $mail . "&sender_email=" . $_SESSION['email'];
             mail($mail, $sub, $msg);
             echo "$mail";
         }
         echo '<script>alert("Donors with requested Blood Group are Notified");</script>';
         echo "<script type='text/javascript'> document.location = 'account.php'; </script>";
-    }else{
+    } else {
         echo '<script>alert("No Donors with requested Blood Group");</script>';
     }
 }
